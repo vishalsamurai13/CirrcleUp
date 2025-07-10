@@ -1,0 +1,153 @@
+/* eslint-disable react/no-unescaped-entities */
+ 
+import CallToAction from '@/components/CTA';
+import { Footer } from '@/components/layout/Footer';
+import Navbar from '@/components/layout/Navbar';
+import QuoteBox from '@/components/Quote';
+import VerticalInfoList from '@/components/VerticalInfoList';
+import WhatWeOfferSection from '@/components/Whatweoffer';
+import { BookOpen, MoveRight } from 'lucide-react';
+import Image from 'next/image';
+import React from 'react'
+
+const whatWeOfferItems = [
+  {
+    heading: "●      ESG leadership competency mapping and succession integration",
+  },
+  {
+    heading: "●      Sustainability expertise in board appointments",
+  },
+  {
+    heading: "●      CXO assessment and upskilling in ESG knowledge",
+  },
+  {
+    heading: "●      Embedding sustainability into leadership evaluations and hiring",
+  },
+];
+
+const verticalItems = [
+  {
+    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    paragraph: "Deep-dive diagnostics on ESG-readiness across leadership layers",
+  },
+  {
+    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    paragraph: "Strategic facilitation: Visioning, policy alignment, reporting frameworks",
+  },
+  {
+    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    paragraph: "Partnership with sustainability experts for cross-functional learning",
+  },
+  {
+    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    paragraph: "ESG-aligned candidate scorecards for hiring and evaluation",
+  },
+];
+
+const verticalItems2 = [
+    {
+      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      paragraph: "We understand both ESG regulations and boardroom dynamics",
+    },
+    {
+      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      paragraph: "Proven experience integrating sustainability into leadership design",
+    },
+    {
+      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      paragraph: "We combine sustainability knowledge with executive search expertise",
+    },
+    {
+      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      paragraph: "We build internal champions who sustain the movement",
+    },
+  ];
+
+const SustainabilityperformancePage = () => {
+  
+
+  return (
+    <div className='text-black bg-white min-h-screen overflow-x-hidden'>
+        {/* <Navbar /> */}
+        <Navbar />
+
+        {/* Header Content */}
+        <div className='pt-[120px] h-full'>
+            {/* Headings with margins */}
+            <div className='ml-[285px] mr-[285px] mt-12 space-y-4 pr-16 pl-16'>
+                <h1 className='font-bold text-[46px] leading-[60px]'>Leadership for a Sustainable Tomorrow</h1>
+                <h2 className='font-medium text-[24px] leading-[40px] text-[#28B673]'>Cirrcle Up partners with boards and CXOs to embed sustainability into leadership, governance, and long-term business vision.</h2>
+            </div>
+            
+            {/* Image positioned on leftmost side */}
+            <div className='flex justify-start mt-8'>
+                <Image 
+                    src="/transformation2.png" 
+                    alt="Board meeting visualization" 
+                    width={1090} 
+                    height={330}
+                    className="object-cover relative"
+                />
+            </div>
+            
+            {/* Paragraph with margins */}
+            <div className='ml-[285px] mr-[285px] mt-12 pr-16 pl-16'>
+                <p className='text-[18px] leading-[23px]'>Sustainability is no longer a checkbox—it’s a CEO and boardroom priority. Customers demand it. Investors reward it. Employees expect it. At Cirrcle Up, we work with leadership teams to elevate sustainability from a compliance task to a strategic pillar.
+                    <br />  <br />
+As part of our Transformation Practice, we help organizations embed ESG (Environmental, Social, Governance) priorities into how they hire, lead, and grow. From board composition to CEO KPIs, we ensure sustainability isn’t a silo—it’s the way forward.</p>
+            </div>
+            {/* <div className='cursor-pointer bg-black text-white p-4 w-[290px] h-[50px] flex items-center justify-center mt-12 uppercase font-semibold text-[12px]'>Connect with our experts</div> */}
+        </div>
+
+        {/* What We Offer Section */}
+        <div className='mt-32'>
+          <WhatWeOfferSection 
+            title="Our Offerings:" 
+            items={whatWeOfferItems}
+            wrapperClassName="ml-[285px] mr-[285px] py-16"
+          />
+        </div>
+
+        {/* Vertical Info list 1 */}
+        <div>
+          <VerticalInfoList
+            title="Approach Highlights:"
+            items={verticalItems}
+            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            showDivider={false}
+          />
+        </div>
+
+        <div className='mt-6'>
+          <VerticalInfoList
+            title="Why Cirrcle Up:"
+            items={verticalItems2}
+            wrapperClassName="ml-[285px] mr-[285px] py-20"
+          />
+        </div>
+        
+        <div className='flex justify-center mt-32'>
+            <QuoteBox 
+              quote='Sustainability isn’t just about the planet—it’s about leadership that dares to care, adapt, and commit to impact.'
+              author='Animesh Singh Rao'
+            />
+        </div>
+        
+
+        {/* Vertical Info list 2 */}
+        <div className='flex justify-center mt-18'>
+          <CallToAction 
+            heading="Lead with purpose. Grow with responsibility."
+            buttons={[
+              { title: "START YOUR ESG LEADERSHIP JOURNEY", href: "/board-search" },
+            ]}
+          backgroundImage="/cta-bg.png"
+          />
+        </div>
+
+        <Footer />
+    </div>
+  )
+}
+
+export default SustainabilityperformancePage;
