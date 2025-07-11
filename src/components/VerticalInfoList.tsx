@@ -6,7 +6,7 @@ interface InfoItem {
 }
 
 interface VerticalInfoListProps {
-  title: string;
+  title?: string;
   items: InfoItem[];
   wrapperClassName?: string;
   showDivider?: boolean;
@@ -19,7 +19,7 @@ const VerticalInfoList: React.FC<VerticalInfoListProps> = ({
   showDivider = true,
 }) => {
   return (
-    <section className="w-full bg-white pr-16 pl-16 pt-12">
+    <section className="w-full pr-16 pl-16 pt-8">
       <div className={wrapperClassName}>
         <h1 className="text-[42px] font-medium mb-12">{title}</h1>
         <div className="space-y-8">

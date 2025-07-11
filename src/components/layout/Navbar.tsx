@@ -250,74 +250,74 @@ export const Capabilities = () => {
 
           {/* Search */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[177px]'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium'>Search</Link>
+            <Link href="/Capabilities/Search" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-medium'>Search</h1></Link>
             <ul className='flex flex-col space-y-3 text-[13px]'>
               <li>
-                <Link href="/Capabilities/Search/BoardSearch">Board Search</Link>
+                <Link href="/Capabilities/Search/BoardSearch" className='hover:text-[#28B673] transition-colors duration-200'>Board Search</Link>
               </li>
               <li>
-                <Link href="/Capabilities/Search/CeoSearch">CEO Search</Link>
+                <Link href="/Capabilities/Search/CeoSearch" className='hover:text-[#28B673] transition-colors duration-200'>CEO Search</Link>
               </li>
               <li>
-                <Link href="/Capabilities/Search/ExecutiveSearch">Executive Search</Link>
+                <Link href="/Capabilities/Search/ExecutiveSearch" className='hover:text-[#28B673] transition-colors duration-200'>Executive Search</Link>
               </li>
             </ul>
           </div>
 
           {/* Succession */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[177px]'>
-            <Link href="/Capabilities/Succession" className='text-[26px] font-medium'>Succession</Link>
+            <Link href="/Capabilities/Succession" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-medium'>Succession</h1></Link>
             <ul className='flex flex-col space-y-3 text-[13px]'>
               <li>
-                <Link href="/Capabilities/Succession/BoardSuccession">Board Succession</Link>
+                <Link href="/Capabilities/Succession/BoardSuccession" className='hover:text-[#28B673] transition-colors duration-200'>Board Succession</Link>
               </li>
               <li>
-                <Link href="/Capabilities/Succession/CeoSuccession">CEO Succession</Link>
+                <Link href="/Capabilities/Succession/CeoSuccession" className='hover:text-[#28B673] transition-colors duration-200'>CEO Succession</Link>
               </li>
               <li>
-                <Link href="/Capabilities/Succession/CsuiteSuccession">C-Suite Succession</Link>
+                <Link href="/Capabilities/Succession/CsuiteSuccession" className='hover:text-[#28B673] transition-colors duration-200'>C-Suite Succession</Link>
               </li>
             </ul>
           </div>
 
           {/* Performance */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[190px]'>
-            <Link href="/Capabilities/Performance" className='text-[26px] font-medium'>Performance</Link>
+            <Link href="/Capabilities/Performance" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-medium'>Performance</h1></Link>
             <ul className='flex flex-col space-y-3 text-[13px]'>
               <li>
-                <Link href="/Capabilities/Performance/A&B">Assessment & Benchmarking</Link>
+                <Link href="/Capabilities/Performance/A&B" className='hover:text-[#28B673] transition-colors duration-200'>Assessment & Benchmarking</Link>
               </li>
               <li>
-                <Link href="/Capabilities/Performance/CeoTransistion">CEO Transitions</Link>
+                <Link href="/Capabilities/Performance/CeoTransistion" className='hover:text-[#28B673] transition-colors duration-200'>CEO Transitions</Link>
               </li>
               <li>
-                <Link href="/Capabilities/Performance/Leadership">Development & Transitions</Link>
+                <Link href="/Capabilities/Performance/Leadership" className='hover:text-[#28B673] transition-colors duration-200'>Development & Transitions</Link>
               </li>
               <li>
-                <Link href="/Capabilities/Performance/TeamEffectiveness">Team Effectiveness</Link>
+                <Link href="/Capabilities/Performance/TeamEffectiveness" className='hover:text-[#28B673] transition-colors duration-200'>Team Effectiveness</Link>
               </li>
             </ul>
           </div>
 
           {/* Accelerators */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[177px]'>
-            <Link href="/Capabilities/Accelerators" className='text-[26px] font-medium'>Accelerators</Link>
+            <Link href="/Capabilities/Accelerators" className='text-[26px] font-medium hover:text-[#28B673] transition-colors duration-200'><h1 className='font-medium'>Accelerators</h1></Link>
             <ul className='flex flex-col space-y-3 text-[13px]'>
               <li>
-                <Link href="/Capabilities/Accelerators/ExecutiveMentoring">Executive Mentoring</Link>
+                <Link href="/Capabilities/Accelerators/ExecutiveMentoring" className='hover:text-[#28B673] transition-colors duration-200'>Executive Mentoring</Link>
               </li>
             </ul>
           </div>
 
           {/* Transformation */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[177px]'>
-            <Link href="/Capabilities/Transformation" className='text-[26px] font-medium'>Transformation</Link>
+            <Link href="/Capabilities/Transformation" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-medium'>Transformation</h1></Link>
             <ul className='flex flex-col space-y-3 text-[13px]'>
               <li>
-                <Link href="/Capabilities/Transformation/I&C">Inclusion & Culture</Link>
+                <Link href="/Capabilities/Transformation/I&C" className='hover:text-[#28B673] transition-colors duration-200'>Inclusion & Culture</Link>
               </li>
               <li>
-                <Link href="/Capabilities/Transformation/Sustainability">Sustainability</Link>
+                <Link href="/Capabilities/Transformation/Sustainability" className='hover:text-[#28B673] transition-colors duration-200'>Sustainability</Link>
               </li>
             </ul>
           </div>
@@ -345,32 +345,32 @@ export const Articles = () => {
 
           {/* Article 1 */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[215px]'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium space-y-8'>
-              <div className='flex items-center justify-between'>Article 1 <ChevronRight /></div>
+            <Link href="/Articles/Article1" className='text-[38px] font-medium space-y-8 hover:text-[#28B673] transition-colors duration-200' >
+              <div className='flex items-center justify-between'><h1 className='font-medium'>Article 1</h1> <ChevronRight /></div>
               <p className='text-[16px] text-muted-foreground'>The Silent Crisis </p>
             </Link>
           </div>
 
           {/* Article 2 */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[215px]'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium space-y-8'>
-              <div className='flex items-center justify-between'>Article 2 <ChevronRight /></div>
+            <Link href="/Articles/Article2" className='text-[38px] font-medium space-y-8 hover:text-[#28B673] transition-colors duration-200'>
+              <div className='flex items-center justify-between'><h1 className='font-medium'>Article 2</h1><ChevronRight /></div>
               <p className='text-[16px] text-muted-foreground'>Hired or Harmed  </p>
             </Link>
           </div>
 
           {/* Article 3 */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[215px]'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium space-y-8'>
-              <div className='flex items-center justify-between'>Article 3 <ChevronRight /></div>
+            <Link href="/Articles/Article3" className='text-[38px] font-medium space-y-8 hover:text-[#28B673] transition-colors duration-200'>
+              <div className='flex items-center justify-between'><h1 className='font-medium'>Article 3</h1><ChevronRight /></div>
               <p className='text-[16px] text-muted-foreground'>The Future of Work Isn&apos;t Remote—It&apos;s Flexible</p>
             </Link>
           </div>
 
           {/* Article 4 */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[215px]'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium space-y-8'>
-              <div className='flex items-center justify-between'>Article 4 <ChevronRight /></div>
+            <Link href="/Articles/Article4" className='text-[38px] font-medium space-y-8 hover:text-[#28B673] transition-colors duration-200'>
+              <div className='flex items-center justify-between'><h1 className='font-medium'>Article 4</h1><ChevronRight /></div>
               <p className='text-[16px] text-muted-foreground'>Beyond the CV</p>
             </Link>
           </div>
@@ -399,24 +399,24 @@ export const About = () => {
 
           {/* Article 1 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium flex items-center justify-between'>
-              People
+            <Link href="/About/People" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-medium'>People</h1>
               <ChevronRight />
             </Link>
           </div>
 
           {/* Article 2 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium flex items-center justify-between'>
-              Who we are
+            <Link href="/About/WhoWeAre" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-medium'>Who we are</h1>
               <ChevronRight />
             </Link>
           </div>
 
           {/* Article 3 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium flex items-center justify-between'>
-              Careers
+            <Link href="/About/Careers" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-medium'>Careers</h1>
               <ChevronRight />
             </Link>
           </div>
@@ -445,32 +445,32 @@ export const Careers = () => {
 
           {/* Article 1 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium flex items-center justify-between'>
-              Get in Touch
+            <Link href="/Contact/GetInTouch" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-medium'>Get in Touch</h1>
               <ChevronRight />
             </Link>
           </div>
 
           {/* Article 2 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium flex items-center justify-between'>
-              Advance Your Career
+            <Link href="/Contact/CareerAdvance" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-medium'>Advance Your Career</h1>
               <ChevronRight />
             </Link>
           </div>
 
           {/* Article 3 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium flex items-center justify-between'>
-              Join the Conversation
+            <Link href="/Capabilities/Search" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-medium'>Join the Conversation</h1>
               <ChevronRight />
             </Link>
           </div>
 
           {/* Article 4 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Capabilities/Search" className='text-[26px] font-medium flex items-center justify-between'>
-              Find a Local Office
+            <Link href="/Contact/LocalOffice" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-medium'>Find a Local Office</h1>
               <ChevronRight />
             </Link>
           </div>

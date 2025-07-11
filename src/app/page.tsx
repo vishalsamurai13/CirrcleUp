@@ -1,4 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @next/next/no-img-element */
+ 
 import ConnectWithExperts from '@/components/CTA2'
 import CallToAction3 from '@/components/CTA3'
 import AnimatedHeroSection from '@/components/Hero'

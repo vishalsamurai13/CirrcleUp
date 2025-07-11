@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+ 
  
 import CallToAction from '@/components/CTA';
 import { Footer } from '@/components/layout/Footer';

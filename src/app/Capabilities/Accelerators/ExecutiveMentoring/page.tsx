@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+ 
  
 import CaseStudyCard from '@/components/CaseStudy';
 import CallToAction from '@/components/CTA';
