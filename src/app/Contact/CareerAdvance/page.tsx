@@ -11,88 +11,93 @@ const CareerAdvance = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const totalPages = 10;
 
-  return (
-    <div className='text-black bg-white min-h-screen overflow-x-hidden'>
-        <Navbar />
-        <div className='pt-[120px] w-full h-full'>
-            <div className='ml-[285px] mr-[285px] p-16 flex flex-col gap-12'>
+    // Sample job data - you can replace this with actual data from API/database
+    const jobData = [
+        {
+            id: "17892102",
+            title: "Recruitment Consultants",
+            experience: "3-5 Years",
+            location: "Remote",
+            skills: ['JavaScript', 'Node.js', 'Express.js', 'MongoDB'],
+            openings: 10
+        },
+        {
+            id: "17892103",
+            title: "Senior Developer",
+            experience: "5-7 Years",
+            location: "Mumbai",
+            skills: ['React', 'TypeScript', 'Next.js', 'PostgreSQL'],
+            openings: 5
+        },
+        {
+            id: "17892104",
+            title: "Product Manager",
+            experience: "4-6 Years",
+            location: "Bangalore",
+            skills: ['Product Strategy', 'Agile', 'Data Analysis', 'Leadership'],
+            openings: 3
+        },
+        {
+            id: "17892105",
+            title: "UI/UX Designer",
+            experience: "2-4 Years",
+            location: "Remote",
+            skills: ['Figma', 'Adobe XD', 'Prototyping', 'User Research'],
+            openings: 8
+        },
+        {
+            id: "17892106",
+            title: "Data Scientist",
+            experience: "3-5 Years",
+            location: "Delhi",
+            skills: ['Python', 'Machine Learning', 'SQL', 'Tableau'],
+            openings: 6
+        }
+    ];
 
-                <h1 className='text-[67px] leading-[70px] text-[#28B673] font-medium'>
-                    Open Roles
-                </h1>
+    return (
+        <div className='text-black bg-white min-h-screen overflow-x-hidden'>
+            <Navbar />
+            <div className='pt-[120px] w-full h-full'>
+                <div className='ml-[285px] mr-[285px] p-16 flex flex-col gap-12'>
 
-                <p>Discover all Job Openings in our company →</p>
+                    <h1 className='text-[67px] leading-[70px] text-[#28B673] font-medium'>
+                        Open Roles
+                    </h1>
 
-                <div className='flex flex-col gap-8'>
-                    <JobCard2
-                        openings={10}
-                        jobId="17892102"
-                        title="Recruitment Consultants"
-                        experience="3-5 Years"
-                        location="Remote"
-                        skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                        applyLink="#"
-                        viewLink="#"
-                    />
-                    <JobCard2
-                        openings={10}
-                        jobId="17892102"
-                        title="Recruitment Consultants"
-                        experience="3-5 Years"
-                        location="Remote"
-                        skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                        applyLink="#"
-                        viewLink="#"
-                    />
-                    <JobCard2
-                        openings={10}
-                        jobId="17892102"
-                        title="Recruitment Consultants"
-                        experience="3-5 Years"
-                        location="Remote"
-                        skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                        applyLink="#"
-                        viewLink="#"
-                    />
-                    <JobCard2
-                        openings={10}
-                        jobId="17892102"
-                        title="Recruitment Consultants"
-                        experience="3-5 Years"
-                        location="Remote"
-                        skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                        applyLink="#"
-                        viewLink="#"
-                    />
-                    <JobCard2
-                        openings={10}
-                        jobId="17892102"
-                        title="Recruitment Consultants"
-                        experience="3-5 Years"
-                        location="Remote"
-                        skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                        applyLink="#"
-                        viewLink="#"
-                    />
+                    <p>Discover all Job Openings in our company →</p>
+
+                    <div className='flex flex-col gap-8'>
+                        {jobData.map((job) => (
+                            <JobCard2
+                                key={job.id}
+                                openings={job.openings}
+                                jobId={job.id}
+                                title={job.title}
+                                experience={job.experience}
+                                location={job.location}
+                                skills={job.skills}
+                                applyLink={`/Contact/CareerAdvance/${job.id}/apply`}
+                                viewLink={`/Contact/CareerAdvance/${job.id}`}
+                            />
+                        ))}
+                    </div>
+
+                    <div>
+                        <Pagination
+                            currentPage={currentPage}
+                            totalPages={totalPages}
+                            onPageChange={setCurrentPage}
+                            siblingCount={1}
+                            className="my-4"
+                        />
+                    </div>
+                    
                 </div>
-
-                <div>
-                    <Pagination
-                        currentPage={currentPage}
-                        totalPages={totalPages}
-                        onPageChange={setCurrentPage}
-                        siblingCount={1} // optional, defaults to 1
-                        className="my-4" // optional additional classes
-                    />
-                </div>
-                
             </div>
-
-            
+            <Footer />
         </div>
-        <Footer />
-    </div>
-  )
+    )
 }
 
 export default CareerAdvance;

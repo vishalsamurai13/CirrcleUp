@@ -12,7 +12,7 @@ import React from 'react'
 
 const whatWeOfferItems = [
   {
-    heading: "Independent Director Searchh",
+    heading: "Independent Director Search",
     paragraph:
       "We focus on independence—not just by regulation, but by thought. We bring voices that add value.",
   },
