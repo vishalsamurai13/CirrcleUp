@@ -13,18 +13,21 @@ const whatWeOfferItems = [
     paragraph:
       "We evaluate your board’s current state, identify skill gaps, and create a future-fit composition roadmap. Our approach ensures diversity, independence, and alignment with strategic imperatives.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Succession/BoardSuccession",
   },
   {
     heading: "CEO Succession",
     paragraph:
       "We help you plan for your most mission-critical leadership transition—be it a founder, long-time CEO, or crisis leadership. We work across internal readiness and external mapping to offer a balanced plan.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Succession/CeoSuccession",
   },
   {
     heading: "C-Suite Succession",
     paragraph:
       "We analyze organizational depth, develop internal talent pipelines, and deliver visibility on ready-now vs. ready-later leaders for key roles across finance, marketing, HR, and more.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Succession/CsuiteSuccession",
   },
 ];
 
@@ -127,9 +130,9 @@ const SuccessionPage = () => {
           <CallToAction 
             heading="Plan for succession before it becomes a scramble."
             buttons={[
-              { title: "EXPLORE BOARD SUCCESSION", href: "/board-search" },
-              { title: "EXPLORE CEO SUCCESSION", href: "/ceo-search" },
-              { title: "EXPLORE C-SUITE SUCCESSION", href: "/executive-search" }
+              { title: "EXPLORE BOARD SUCCESSION", href: "/Capabilities/Succession/BoardSuccession" },
+              { title: "EXPLORE CEO SUCCESSION", href: "/Capabilities/Succession/CeoSuccession" },
+              { title: "EXPLORE C-SUITE SUCCESSION", href: "/Capabilities/Succession/CsuiteSuccession" }
             ]}
           
           />

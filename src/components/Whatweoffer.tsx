@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface OfferItem {
@@ -5,6 +6,7 @@ interface OfferItem {
   paragraph?: string;
   icon?: React.ReactNode;
   buttonText?: string;
+  buttonLink?: string;
 }
 
 interface WhatWeOfferSectionProps {
@@ -32,10 +34,10 @@ const WhatWeOfferSection: React.FC<WhatWeOfferSectionProps> = ({
               <p className="text-gray-700 mb-4 leading-relaxed text-[18px]">{item.paragraph}</p>
               
               {item.buttonText && (
-                <button className="group inline-flex items-center font-semibold text-[14px] uppercase border-b border-black hover:opacity-75 cursor-pointer">
-                  {item.buttonText}
-                  <span className="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
-                </button>
+                  <Link href={item.buttonLink || "#"} className="group inline-flex items-center font-semibold text-[14px] uppercase border-b border-black hover:opacity-75 cursor-pointer">
+                    {item.buttonText}
+                    <span className="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
+                  </Link>
               )}
             </div>
           ))}

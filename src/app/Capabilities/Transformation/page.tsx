@@ -14,24 +14,28 @@ const whatWeOfferItems = [
     paragraph:
       "We help build cultures where diversity, equity, and belonging are not just buzzwords but business drivers. Our interventions include diagnostics, leadership workshops, and sustained behavior change programs.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Transformation/I&C",
   },
   {
     heading: "Sustainability",
     paragraph:
       "ESG priorities are integrated into everything from board composition to executive performance. We support organizations in future-proofing their business through sustainability benchmarking, talent alignment, and strategic leadership placements.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Transformation/Sustainability",
   },
   {
     heading: "Leadership Alignment",
     paragraph:
       "We facilitate offsites and strategy sessions that bring executive teams together around shared vision, values, and priorities.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Transformation/I&C",
   },
   {
     heading: "Change Management",
     paragraph:
       "Structured frameworks for managing communication, stakeholder engagement, and resistance—ensuring transformation is successful and enduring.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Transformation/Sustainability",
   },
 ];
 
@@ -136,7 +140,7 @@ At Cirrcle Up, our Transformation Practice is designed to help companies anticip
           <CallToAction 
             heading=" Let’s build your transformation roadmap."
             buttons={[
-              { title: "REQUEST A TRANSFORMATION WORKSHOP", href: "/board-search" },
+              { title: "REQUEST A TRANSFORMATION WORKSHOP", href: "/Contact/GetInTouch" },
             ]}
           
           />

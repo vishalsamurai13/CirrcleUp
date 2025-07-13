@@ -15,24 +15,28 @@ const whatWeOfferItems = [
     paragraph:
       "We evaluate your board's current state, identify skill gaps, and create a future-fit composition roadmap. Our approach ensures diversity, independence, and alignment with strategic imperatives.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Performance/A&B",
   },
   {
     heading: "CEO Transitions",
     paragraph:
       "We help you plan for your most mission-critical leadership transition—be it a founder, long-time CEO, or crisis leadership. We work across internal readiness and external mapping to offer a balanced plan.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Performance/CeoTransistion",
   },
   {
     heading: "Leadership Development & Transitions",
     paragraph:
       "We analyze organizational depth, develop internal talent pipelines, and deliver visibility on ready-now vs. ready-later leaders for key roles across finance, marketing, HR, and more.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Performance/Leadership",
   },
   {
     heading: "Team Effectiveness",
     paragraph:
       "We analyze organizational depth, develop internal talent pipelines, and deliver visibility on ready-now vs. ready-later leaders for key roles across finance, marketing, HR, and more.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Performance/TeamEffectiveness",
   },
 ];
 
@@ -166,7 +170,7 @@ const PerformancePage = () => {
           <CallToAction 
             heading="Elevate your leadership team’s impact."
             buttons={[
-              { title: "EXPLORE ASSESSMENT TOOLS", href: "/board-search" },
+              { title: "EXPLORE ASSESSMENT TOOLS", href: "/Contact/GetInTouch" },
             ]}
           />
         </div>

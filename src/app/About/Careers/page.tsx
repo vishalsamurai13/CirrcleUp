@@ -174,8 +174,8 @@ const Careers = () => {
                             experience="3-5 Years"
                             location="Remote"
                             skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                            applyLink="#"
-                            viewLink="#"
+                            applyLink="/Contact/CareerAdvance/17892102/apply"
+                            viewLink="/Contact/CareerAdvance/17892102"
                         />
                         <JobCard
                             jobId="17892102"
@@ -183,8 +183,8 @@ const Careers = () => {
                             experience="3-5 Years"
                             location="Remote"
                             skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                            applyLink="#"
-                            viewLink="#"
+                            applyLink="/Contact/CareerAdvance/17892102/apply"
+                            viewLink="/Contact/CareerAdvance/17892102"
                         />
                         <JobCard
                             jobId="17892102"
@@ -192,8 +192,8 @@ const Careers = () => {
                             experience="3-5 Years"
                             location="Remote"
                             skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                            applyLink="#"
-                            viewLink="#"
+                            applyLink="/Contact/CareerAdvance/17892102/apply"
+                            viewLink="/Contact/CareerAdvance/17892102"
                         />
                         <JobCard
                             jobId="17892102"
@@ -201,8 +201,8 @@ const Careers = () => {
                             experience="3-5 Years"
                             location="Remote"
                             skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                            applyLink="#"
-                            viewLink="#"
+                            applyLink="/Contact/CareerAdvance/17892102/apply"
+                            viewLink="/Contact/CareerAdvance/17892102"
                         />
                         <JobCard
                             jobId="17892102"
@@ -210,8 +210,8 @@ const Careers = () => {
                             experience="3-5 Years"
                             location="Remote"
                             skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                            applyLink="#"
-                            viewLink="#"
+                            applyLink="/Contact/CareerAdvance/17892102/apply"
+                            viewLink="/Contact/CareerAdvance/17892102"
                         />
                         <JobCard
                             jobId="17892102"
@@ -219,12 +219,12 @@ const Careers = () => {
                             experience="3-5 Years"
                             location="Remote"
                             skills={['JavaScript', 'Node.js', 'Express.js', 'MongoDB']}
-                            applyLink="#"
-                            viewLink="#"
+                            applyLink="/Contact/CareerAdvance/17892102/apply"
+                            viewLink="/Contact/CareerAdvance/17892102"
                         />
                     </div>
                     <div className='mt-12'>
-                        <Link className='hover:opacity/50 transition-opacity flex justify-center items-center flex-col' href='/'>
+                        <Link className='hover:opacity/50 transition-opacity flex justify-center items-center flex-col' href='/Contact/CareerAdvance'>
                             <h2 className='uppercase text-[16px] font-semibold'>See all roles</h2>
                             <span className='w-[125px] h-[2px] bg-black'/>
                         </Link>

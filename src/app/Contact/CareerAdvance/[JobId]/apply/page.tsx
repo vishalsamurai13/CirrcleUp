@@ -14,9 +14,8 @@ const JobApplicationPage = () => {
 
     // You can fetch job details based on jobId here
     // For now, using static data as example
-    const getJobData = (jobId: string) => {
-        // This would typically come from your database or API
-        const jobsData = {
+    const getJobDataRecord = (jobId: string) => {
+        const jobsData: Record<string, { title: string; department: string; type: string }> = {
             "17892102": {
                 title: "Recruitment Consultants (All levels)",
                 department: "HR",
@@ -51,7 +50,7 @@ const JobApplicationPage = () => {
         };
     };
 
-    const jobData = getJobData(jobId);
+    const jobData = getJobDataRecord(jobId);
 
     const handleFormSubmit = (formData: any) => {
         console.log("Application submitted:", formData);

@@ -14,18 +14,21 @@ const whatWeOfferItems = [
     paragraph:
       "1-on-1 mentoring journeys for senior executives, new CXOs, and founders—matching leaders with seasoned mentors to accelerate adaptation and decision-making.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Accelerators/ExecutiveMentoring",
   },
   {
     heading: "High-Potential Development",
     paragraph:
       "Custom programs for emerging leaders, including coaching, stretch assignments, and business-linked learning.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Accelerators/ExecutiveMentoring",
   },
   {
     heading: "Leadership Labs",
     paragraph:
       "Interactive workshops and simulations to sharpen strategic thinking, communication, and collaboration skills.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Accelerators/ExecutiveMentoring",
   },
 ];
 
@@ -130,7 +133,7 @@ The Accelerators Practice at Cirrcle Up is focused on designing mentoring, coach
           <CallToAction 
             heading=" Supercharge your leadership pipeline."
             buttons={[
-              { title: "BOOK AN ACCELERATOR CONSULTATION", href: "/board-search" },
+              { title: "BOOK AN ACCELERATOR CONSULTATION", href: "/Contact/GetInTouch" },
             ]}
           
           />

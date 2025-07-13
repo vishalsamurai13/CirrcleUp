@@ -12,18 +12,21 @@ const whatWeOfferItems = [
     paragraph:
       "We help you identify independent board directors who understand governance, risk, and value creation. Our emphasis on diversity, independence, and experience ensures your board reflects today’s evolving stakeholder expectations.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Search/BoardSearch",
   },
   {
     heading: "CEO Search",
     paragraph:
       "The CEO is the face of your brand and the custodian of your long-term vision. We help companies find transformational CEOs who can balance operational excellence with innovation and long-term impact.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Search/CeoSearch",
   },
   {
     heading: "Executive Search",
     paragraph:
       "Our executive search capabilities span across the C-suite—from CFOs and CMOs to CHROs and CTOs. We use a tailored, data-backed approach to ensure that your leadership pipeline aligns with both your current and future business goals.",
     buttonText: "Learn More",
+    buttonLink: "/Capabilities/Search/ExecutiveSearch",
   },
 ];
 
@@ -118,9 +121,9 @@ const SearchPage = () => {
           <CallToAction 
             heading="Discover how our search services can reshape your leadership."
             buttons={[
-              { title: "EXPLORE BOARD SEARCH", href: "/board-search" },
-              { title: "EXPLORE CEO SEARCH", href: "/ceo-search" },
-              { title: "EXPLORE EXECUTIVE SEARCH", href: "/executive-search" }
+              { title: "EXPLORE BOARD SEARCH", href: "/Capabilities/Search/BoardSearch" },
+              { title: "EXPLORE CEO SEARCH", href: "/Capabilities/Search/CeoSearch" },
+              { title: "EXPLORE EXECUTIVE SEARCH", href: "/Capabilities/Search/ExecutiveSearch" }
             ]}
           backgroundImage="/cta-bg.png"
           />

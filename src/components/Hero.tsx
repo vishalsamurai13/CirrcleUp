@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { WhiteNavbar } from './layout/Navbar';
 
 const AnimatedHeroSection = () => {
@@ -13,26 +14,29 @@ const AnimatedHeroSection = () => {
     {
       id: 'cfo',
       backgroundImage: '/cfo.png',
-      category: 'DATA AND INSIGHTS',
-      title: 'CFO Turnover Report',
+      category: '8 mins Read',
+      title: 'The Silent Crisis',
       description: 'Our latest analysis reveals key patterns in CFO transitions, highlighting the evolving role of financial leadership in today\'s complex business environment.',
-      tabLabel: 'CFO Turnover Index'
+      tabLabel: 'Article 1',
+      link: '/Articles/Article1' // Add your desired link here
     },
     {
       id: 'chro',
       backgroundImage: '/CHRO.png',
-      category: 'TALENT ANALYTICS',
-      title: 'CHRO Turnover Report',
+      category: '6 mins Read',
+      title: 'Hired or Harmed',
       description: 'Deep dive into Chief Human Resources Officer transitions and their impact on organizational culture and employee engagement in the modern workplace.',
-      tabLabel: 'CHRO Turnover Index'
+      tabLabel: 'Article 2',
+      link: '/Articles/Article2' // Add your desired link here
     },
     {
       id: 'ceo',
       backgroundImage: '/Ceo.png',
-      category: 'EXECUTIVE INSIGHTS',
-      title: 'CEO Talks',
+      category: '12 mins Read',
+      title: 'Beyond the CV',
       description: 'Exclusive interviews and insights from top CEOs sharing their perspectives on leadership, strategy, and navigating business challenges.',
-      tabLabel: 'CEO Talks'
+      tabLabel: 'Article 3',
+      link: '/Articles/Article4' // Add your desired link here
     }
   ];
 
@@ -100,9 +104,11 @@ const AnimatedHeroSection = () => {
               <p className="text-white text-[24px] leading-[38px] mt-4">
                 {currentData.description}
               </p>
-              <div className="uppercase bg-white text-black w-[184px] h-[46px] font-semibold flex items-center justify-center mt-12 hover:bg-gray-200 transition-colors cursor-pointer">
-                explore more
-              </div>
+              <Link href={currentData.link}>
+                <div className="uppercase bg-white text-black w-[184px] h-[46px] font-semibold flex items-center justify-center mt-12 hover:bg-gray-200 transition-colors cursor-pointer">
+                  explore more
+                </div>
+              </Link>
             </div>
           </div>
 
