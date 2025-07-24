@@ -91,7 +91,7 @@ export default function Navbar() {
         </div>
 
         {/* Right Container */}
-        <div className='flex space-x-8 '>
+        <div className='flex space-x-8'>
           <div className='bg-black h-[30px] w-[2px] ml-10'/>
           <div className='flex items-center text-black gap-[6px]'>
             <Globe />
@@ -246,11 +246,11 @@ export const Capabilities = () => {
       <div className='bg-[#F2F2F2] w-6/8'>
 
         {/* Quick Links */}
-        <div className='ml-[285px] h-full mt-8 grid grid-cols-3'>
+        <div className='ml-[285px] h-full mt-8 grid grid-cols-3 p-6'>
 
           {/* Search */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[177px]'>
-            <Link href="/Capabilities/Search" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-medium'>Search</h1></Link>
+            <Link href="/Capabilities/Search" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-light'>Search</h1></Link>
             <ul className='flex flex-col space-y-3 text-[13px]'>
               <li>
                 <Link href="/Capabilities/Search/BoardSearch" className='hover:text-[#28B673] transition-colors duration-200'>Board Search</Link>
@@ -266,7 +266,7 @@ export const Capabilities = () => {
 
           {/* Succession */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[177px]'>
-            <Link href="/Capabilities/Succession" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-medium'>Succession</h1></Link>
+            <Link href="/Capabilities/Succession" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-light'>Succession</h1></Link>
             <ul className='flex flex-col space-y-3 text-[13px]'>
               <li>
                 <Link href="/Capabilities/Succession/BoardSuccession" className='hover:text-[#28B673] transition-colors duration-200'>Board Succession</Link>
@@ -282,7 +282,7 @@ export const Capabilities = () => {
 
           {/* Performance */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[190px]'>
-            <Link href="/Capabilities/Performance" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-medium'>Performance</h1></Link>
+            <Link href="/Capabilities/Performance" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-light'>Performance</h1></Link>
             <ul className='flex flex-col space-y-3 text-[13px]'>
               <li>
                 <Link href="/Capabilities/Performance/A&B" className='hover:text-[#28B673] transition-colors duration-200'>Assessment & Benchmarking</Link>
@@ -301,7 +301,7 @@ export const Capabilities = () => {
 
           {/* Accelerators */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[177px]'>
-            <Link href="/Capabilities/Accelerators" className='text-[26px] font-medium hover:text-[#28B673] transition-colors duration-200'><h1 className='font-medium'>Accelerators</h1></Link>
+            <Link href="/Capabilities/Accelerators" className='text-[26px] font-medium hover:text-[#28B673] transition-colors duration-200'><h1 className='font-light'>Accelerators</h1></Link>
             <ul className='flex flex-col space-y-3 text-[13px]'>
               <li>
                 <Link href="/Capabilities/Accelerators/ExecutiveMentoring" className='hover:text-[#28B673] transition-colors duration-200'>Executive Mentoring</Link>
@@ -311,7 +311,7 @@ export const Capabilities = () => {
 
           {/* Transformation */}
           <div className='flex flex-col gap-4 h-full text-black max-w-[177px]'>
-            <Link href="/Capabilities/Transformation" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-medium'>Transformation</h1></Link>
+            <Link href="/Capabilities/Transformation" className='text-[26px] hover:text-[#28B673] transition-colors duration-200'><h1 className='font-light'>Transformation</h1></Link>
             <ul className='flex flex-col space-y-3 text-[13px]'>
               <li>
                 <Link href="/Capabilities/Transformation/I&C" className='hover:text-[#28B673] transition-colors duration-200'>Inclusion & Culture</Link>
@@ -325,8 +325,8 @@ export const Capabilities = () => {
         </div>
       </div>
       <div className='bg-[#28B673] w-2/8 p-3'> 
-        <h1 className='text-[32px] font-semibold text-white'>The Science Behind C-Suite Success: Your CxOs Need This Skill</h1>
-        <p className='text-[15px] text-white'>The requirements of a high-performing CxO have fundamentally shifted - its time for a new approach</p>
+        <h1 className='text-[46px] leading-tight font-semibold text-white'>The Science Behind C-Suite Success: Your CxOs Need This Skill</h1>
+        <p className='text-[15px] text-white mt-8'>The requirements of a high-performing CxO have fundamentally shifted - its time for a new approach</p>
         <Link href='/Capabilities/Search'>
           <ArrowRight className='text-white mt-4 w-8 h-8' />
         </Link>
@@ -341,37 +341,56 @@ export const Articles = () => {
       <div className='bg-[#F2F2F2] w-6/8'>
 
         {/* Quick Links */}
-        <div className='ml-[285px] h-full mt-8 grid grid-cols-2'>
+        <div className='ml-[285px] space-y-32 mt-8 grid grid-cols-2 p-6'>
 
           {/* Article 1 */}
-          <div className='flex flex-col gap-4 h-full text-black max-w-[215px]'>
+          <div className='flex flex-col gap-4 h-full text-black max-w-[300px]'>
             <Link href="/Articles/Article1" className='text-[38px] font-medium space-y-8 hover:text-[#28B673] transition-colors duration-200' >
-              <div className='flex items-center justify-between'><h1 className='font-medium'>Article 1</h1> <ChevronRight /></div>
-              <p className='text-[16px] text-muted-foreground'>The Silent Crisis </p>
+              <div className='flex items-center justify-between'>
+                <h1 className='font-light text-[26px] text-muted-foreground'>
+                  The Silent Crisis 
+                </h1> 
+                <ChevronRight />
+              </div>
+              
             </Link>
           </div>
 
           {/* Article 2 */}
-          <div className='flex flex-col gap-4 h-full text-black max-w-[215px]'>
+          <div className='flex flex-col gap-4 h-full text-black max-w-[300px]'>
             <Link href="/Articles/Article2" className='text-[38px] font-medium space-y-8 hover:text-[#28B673] transition-colors duration-200'>
-              <div className='flex items-center justify-between'><h1 className='font-medium'>Article 2</h1><ChevronRight /></div>
-              <p className='text-[16px] text-muted-foreground'>Hired or Harmed  </p>
+              <div className='flex items-center justify-between'>
+                <h1 className='font-light text-[26px] text-muted-foreground'>
+                  Hired or Harmed
+                </h1>
+                <ChevronRight />
+              </div>
+              
             </Link>
           </div>
 
           {/* Article 3 */}
-          <div className='flex flex-col gap-4 h-full text-black max-w-[215px]'>
+          <div className='flex flex-col gap-4 h-full text-black max-w-[300px]'>
             <Link href="/Articles/Article3" className='text-[38px] font-medium space-y-8 hover:text-[#28B673] transition-colors duration-200'>
-              <div className='flex items-center justify-between'><h1 className='font-medium'>Article 3</h1><ChevronRight /></div>
-              <p className='text-[16px] text-muted-foreground'>The Future of Work Isn&apos;t Remote—It&apos;s Flexible</p>
+              <div className='flex items-center justify-between'>
+                <h1 className='font-light text-[26px] text-muted-foreground max-w-[195px]'>
+                  The Future of Work Isn&apos;t Remote—It&apos;s Flexible
+                </h1>
+                <ChevronRight />
+              </div>
+              
             </Link>
           </div>
 
           {/* Article 4 */}
-          <div className='flex flex-col gap-4 h-full text-black max-w-[215px]'>
+          <div className='flex flex-col gap-4 h-full text-black max-w-[300px]'>
             <Link href="/Articles/Article4" className='text-[38px] font-medium space-y-8 hover:text-[#28B673] transition-colors duration-200'>
-              <div className='flex items-center justify-between'><h1 className='font-medium'>Article 4</h1><ChevronRight /></div>
-              <p className='text-[16px] text-muted-foreground'>Beyond the CV</p>
+              <div className='flex items-center justify-between'>
+                <h1 className='font-light text-[26px] text-muted-foreground'>
+                  Beyond the CV
+                </h1>
+                <ChevronRight />
+              </div>
             </Link>
           </div>
 
@@ -379,8 +398,8 @@ export const Articles = () => {
       </div>
 
       <div className='bg-[#28B673] w-2/8 p-3'> 
-        <h1 className='text-[32px] font-semibold text-white'>Board & CEO Advisory</h1>
-        <p className='text-[15px] text-white'>Is your board ready for what is next? We help boards and CEOs face the unprecedented challenges that shape our world—from disruptive technology to shifting demographics to pressure from investors and regulators.</p>
+        <h1 className='text-[46px] leading-tight font-semibold text-white'>Board & CEO Advisory</h1>
+        <p className='text-[15px] text-white mt-8'>Is your board ready for what is next? We help boards and CEOs face the unprecedented challenges that shape our world—from disruptive technology to shifting demographics to pressure from investors and regulators.</p>
         <Link href='/Capabilities/Search'>
           <ArrowRight className='text-white mt-4 w-8 h-8' />
         </Link>
@@ -395,28 +414,28 @@ export const About = () => {
       <div className='bg-[#F2F2F2] w-6/8'>
 
         {/* Quick Links */}
-        <div className='ml-[285px] h-full mt-8 flex flex-col space-y-8'>
+        <div className='ml-[285px] h-full mt-8 flex flex-col space-y-8 p-6'>
 
           {/* Article 1 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/About/People" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
-              <h1 className='font-medium'>People</h1>
+            <Link href="/About/People" className='text-[26px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-light'>People</h1>
               <ChevronRight />
             </Link>
           </div>
 
           {/* Article 2 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/About/WhoWeAre" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
-              <h1 className='font-medium'>Who we are</h1>
+            <Link href="/About/WhoWeAre" className='text-[26px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-light'>Who we are</h1>
               <ChevronRight />
             </Link>
           </div>
 
           {/* Article 3 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/About/Careers" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
-              <h1 className='font-medium'>Careers</h1>
+            <Link href="/About/Careers" className='text-[26px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-light'>Careers</h1>
               <ChevronRight />
             </Link>
           </div>
@@ -425,8 +444,8 @@ export const About = () => {
       </div>
 
       <div className='bg-[#28B673] w-2/8 p-3'> 
-        <h1 className='text-[32px] font-semibold text-white'>Consultant Directory</h1>
-        <p className='text-[15px] text-white'>We share the latest CEO turnover data across listed companies globally. Each quarter, you&apos;ll find the proportion of CEO departures and appointments globally, as well as trends on CEO appointments by gender, tenure, and whether CEOs are internal or external hires.</p>
+        <h1 className='text-[46px] leading-tight font-semibold text-white'>Consultant Directory</h1>
+        <p className='text-[15px] text-white mt-8'>We share the latest CEO turnover data across listed companies globally. Each quarter, you&apos;ll find the proportion of CEO departures and appointments globally, as well as trends on CEO appointments by gender, tenure, and whether CEOs are internal or external hires.</p>
         <Link href='/Capabilities/Search'>
           <ArrowRight className='text-white mt-4 w-8 h-8' />
         </Link>
@@ -441,36 +460,36 @@ export const Careers = () => {
       <div className='bg-[#F2F2F2] w-6/8'>
 
         {/* Quick Links */}
-        <div className='ml-[285px] h-full mt-8 flex flex-col space-y-8'>
+        <div className='ml-[285px] h-full mt-8 flex flex-col space-y-8 p-6'>
 
           {/* Article 1 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Contact/GetInTouch" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
-              <h1 className='font-medium'>Get in Touch</h1>
+            <Link href="/Contact/GetInTouch" className='text-[26px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-light'>Get in Touch</h1>
               <ChevronRight />
             </Link>
           </div>
 
           {/* Article 2 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Contact/CareerAdvance" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
-              <h1 className='font-medium'>Advance Your Career</h1>
+            <Link href="/Contact/CareerAdvance" className='text-[26px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-light'>Advance Your Career</h1>
               <ChevronRight />
             </Link>
           </div>
 
           {/* Article 3 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Capabilities/Search" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
-              <h1 className='font-medium'>Join the Conversation</h1>
+            <Link href="/Capabilities/Search" className='text-[26px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-light'>Join the Conversation</h1>
               <ChevronRight />
             </Link>
           </div>
 
           {/* Article 4 */}
           <div className=' text-black max-w-lg'>
-            <Link href="/Contact/LocalOffice" className='text-[38px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
-              <h1 className='font-medium'>Find a Local Office</h1>
+            <Link href="/Contact/LocalOffice" className='text-[26px] font-medium flex items-center justify-between hover:text-[#28B673] transition-colors duration-200'>
+              <h1 className='font-light'>Find a Local Office</h1>
               <ChevronRight />
             </Link>
           </div>
@@ -479,8 +498,8 @@ export const Careers = () => {
       </div>
 
       <div className='bg-[#28B673] w-2/8 p-3'> 
-        <h1 className='text-[32px] font-semibold text-white'>Request for Consultation</h1>
-        <p className='text-[15px] text-white'>We share the latest CEO turnover data across listed companies globally. Each quarter, you&apos;ll find the proportion of CEO departures and appointments globally, as well as trends on CEO appointments by gender, tenure, and whether CEOs are internal or external hires.</p>
+        <h1 className='text-[46px] leading-tight font-semibold text-white'>Request for Consultation</h1>
+        <p className='text-[15px] text-white mt-8'>We share the latest CEO turnover data across listed companies globally. Each quarter, you&apos;ll find the proportion of CEO departures and appointments globally, as well as trends on CEO appointments by gender, tenure, and whether CEOs are internal or external hires.</p>
         <Link href='/Capabilities/Search'>
           <ArrowRight className='text-white mt-4 w-8 h-8' />
         </Link>

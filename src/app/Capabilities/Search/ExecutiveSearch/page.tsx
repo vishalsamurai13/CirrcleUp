@@ -11,19 +11,19 @@ import React from 'react'
 
 const whatWeOfferItems = [
   {
-    heading: "●      Chief Financial Officer (CFO)",
+    paragraph: "●      Chief Financial Officer (CFO)",
   },
   {
-    heading: "●      Chief Human Resources Officer (CHRO)",
+    paragraph: "●      Chief Human Resources Officer (CHRO)",
   },
   {
-    heading: "●      Chief Marketing Officer (CMO)",
+    paragraph: "●      Chief Marketing Officer (CMO)",
   },
   {
-    heading: "●      Chief Technology Officer (CTO)",
+    paragraph: "●      Chief Technology Officer (CTO)",
   },
   {
-    heading: "●      Chief Growth/Product/Supply Chain Officers and more",
+    paragraph: "●      Chief Growth/Product/Supply Chain Officers and more",
   },
 ];
 

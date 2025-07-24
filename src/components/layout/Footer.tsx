@@ -5,8 +5,8 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='w-full flex flex-col h-[580px] items-center justify-center'>
-        <div className='flex flex-row space-x-24'> 
+    <div className='flex flex-col h-[580px] items-center justify-center w-full'>
+        <div className='flex w-[1080px] px-4 justify-between'>
 
             {/* Left Container */}
             <div className='max-w-[137px] flex flex-col space-y-6'>
@@ -21,20 +21,20 @@ export const Footer = () => {
             </div>
 
             {/* middle Container */}
-            <div className='max-w-[137px] flex flex-col space-y-6'>
+            <div className='max-w-[137px] flex flex-col space-y-6 ml-18'>
                 <h2 className='uppercase text-[14px] text-[#5C5C5C] font-medium'>OUR OFFICE</h2>
                 <p className='text-[12px] text-[#5C5C5C] leading-relaxed'>7th Floor, IndiQube, Tower B, Unitech Cyberpark, Sector 39, Gurgaon (Haryana) 122052</p>
             </div>
 
             {/* right Container */}
-            <div className='max-w-[313px] flex flex-col space-y-6'>
+            <div className='max-w-[313px] flex flex-col space-y-6 text-right'>
                 <h2 className='text-[14px] uppercase text-[#5C5C5C] font-medium'>SHAPE WHAT'S NEXT, RIGHT NOW</h2>
-                <h2 className='text-[33px] text-[#28B673] leading-[39px] font-medium'>Sign up for Next, our exclusive leadership newsletter.</h2>
+                <h1 className='text-[33px] text-[#28B673] leading-[39px] font-medium'>Sign up for Next, our exclusive leadership newsletter.</h1>
             </div>
         </div>
         
         {/* Bottom Section with improved layout */}
-        <div className='flex flex-row mt-12 w-full max-w-[800px] justify-between items-center'>
+        <div className='flex flex-row mt-12 px-4 w-[1080px] justify-between items-center'>
             
             {/* Social Media Icons */}
             <div className='flex items-center gap-4'>

@@ -17,7 +17,7 @@ const AnimatedHeroSection = () => {
       category: '8 mins Read',
       title: 'The Silent Crisis',
       description: 'Our latest analysis reveals key patterns in CFO transitions, highlighting the evolving role of financial leadership in today\'s complex business environment.',
-      tabLabel: 'Article 1',
+      tabLabel: 'The Silent Crisis',
       link: '/Articles/Article1' // Add your desired link here
     },
     {
@@ -26,7 +26,7 @@ const AnimatedHeroSection = () => {
       category: '6 mins Read',
       title: 'Hired or Harmed',
       description: 'Deep dive into Chief Human Resources Officer transitions and their impact on organizational culture and employee engagement in the modern workplace.',
-      tabLabel: 'Article 2',
+      tabLabel: 'Hired or Harmed',
       link: '/Articles/Article2' // Add your desired link here
     },
     {
@@ -35,7 +35,7 @@ const AnimatedHeroSection = () => {
       category: '12 mins Read',
       title: 'Beyond the CV',
       description: 'Exclusive interviews and insights from top CEOs sharing their perspectives on leadership, strategy, and navigating business challenges.',
-      tabLabel: 'Article 3',
+      tabLabel: 'Beyond the CV',
       link: '/Articles/Article4' // Add your desired link here
     }
   ];

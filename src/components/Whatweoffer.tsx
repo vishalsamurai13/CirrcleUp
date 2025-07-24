@@ -30,7 +30,7 @@ const WhatWeOfferSection: React.FC<WhatWeOfferSectionProps> = ({
         <div className="space-y-16">
           {items.map((item, index) => (
             <div key={index}>
-                <h1 className="text-[38px] font-light mb-3">{item.heading}</h1>
+                <h1 className="text-[28px] font-light mb-3">{item.heading}</h1>
               <p className="text-gray-700 mb-4 leading-relaxed text-[18px]">{item.paragraph}</p>
               
               {item.buttonText && (
