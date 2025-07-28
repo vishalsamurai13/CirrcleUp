@@ -30,17 +30,17 @@ const ConnectWithExperts: React.FC<ConnectWithExpertsProps> = ({
       />
 
       {/* Content */}
-      <div className="absolute z-20 inset-0 bg-black/50 px-12 py-10 flex flex-col justify-between">
+      <div className="absolute z-20 inset-0 bg-black/50 lg:px-12 px-4 py-5 lg:py-10 flex flex-col justify-between">
         <div>
-          <h1 className="text-[32px] mb-3 font-light">{heading}</h1>
-          <p className="text-[18px] leading-[28px] max-w-[700px]">{description}</p>
+          <h1 className="text-[28px] lg:text-[32px] mb-3 font-light">{heading}</h1>
+          <p className="text-[14px] lg:text-[18px] leading-[28px] max-w-[700px]">{description}</p>
         </div>
 
         <div className="flex gap-12 mt-6">
           {buttons.map((btn, idx) => (
             <Link key={idx} href={btn.href}>
-              <div className="border-b border-white pb-1 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide hover:opacity-80 transition cursor-pointer">
-                {btn.title} <span className="text-xl">→</span>
+              <div className="border-b border-white text-[11px] pb-1 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide hover:opacity-80 transition cursor-pointer">
+                {btn.title} <span className="text-lg">→</span>
               </div>
             </Link>
           ))}

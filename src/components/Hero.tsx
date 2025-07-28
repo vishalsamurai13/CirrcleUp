@@ -88,7 +88,7 @@ const AnimatedHeroSection = () => {
         </div>
 
         {/* Content Container */}
-        <div className="relative z-20 ml-[285px] mr-[285px] mt-32 space-y-4 pr-16 pl-16">
+        <div className="relative z-20 lg:ml-[285px] lg:mr-[285px] lg:mt-32 lg:space-y-4 lg:pr-16 lg:pl-16 mx-4">
           {/* Hero Content with Animation */}
           <div className="max-w-[720px]">
             <div 
@@ -98,22 +98,22 @@ const AnimatedHeroSection = () => {
               <h2 className="text-white text-[14px] leading-[60px] tracking-wider">
                 {currentData.category}
               </h2>
-              <h1 className="text-white text-[54px] leading-[60px] font-light">
+              <h1 className="text-white text-[40px] lg:text-[54px] leading-[60px] font-light">
                 {currentData.title}
               </h1>
-              <p className="text-white text-[24px] leading-[38px] mt-4">
+              <p className="text-white text-[18px] lg:text-[24px] leading-[30px] lg:leading-[38px] mt-4">
                 {currentData.description}
               </p>
               <Link href={currentData.link}>
-                <div className="uppercase bg-white text-black w-[184px] h-[46px] font-semibold flex items-center justify-center mt-12 hover:bg-gray-200 transition-colors cursor-pointer">
-                  explore more
+                <div className="uppercase bg-white text-black w-[150px] h-[30px] lg:w-[184px] lg:h-[46px] font-semibold flex items-center justify-center mt-12 hover:bg-gray-200 transition-colors cursor-pointer">
+                  <span className='text-[12px] lg:text-[16px]'>explore more</span>
                 </div>
               </Link>
             </div>
           </div>
 
           {/* Tabs */}
-          <div className="flex justify-center mt-48 gap-8">
+          <div className="flex-col space-y-6 lg:flex lg:flex-row justify-center mt-30 lg:mt-48 lg:gap-8">
             {tabData.map((data, index) => (
               <div 
                 key={data.id}

@@ -39,7 +39,7 @@ const CallToAction3: React.FC<CallToActionProps> = ({
       <div className="absolute inset-0 bg-black/50 z-0" />
 
       {/* Content */}
-      <div className="relative z-10 w-full h-full flex justify-center items-center gap-24 px-12">
+      <div className="relative z-10 w-full h-full flex flex-col lg:flex-row  items-center gap-12 lg:gap-24 lg:px-12 px-4 py-5">
         {/* Heading & description */}
         <div className="mb-8 flex flex-col">
           <h1 className="text-[28px] font-medium mb-6">{heading}</h1>
