@@ -1,11 +1,12 @@
 import CallToAction from '@/components/CTA';
 import { Footer } from '@/components/layout/Footer';
-import Navbar from '@/components/layout/Navbar';
+import { WhiteNavbar } from '@/components/layout/Navbar';
 import QuoteBox from '@/components/Quote';
 import VerticalInfoList from '@/components/VerticalInfoList';
 import WhatWeOfferSection from '@/components/Whatweoffer';
 import { BookOpen } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 const whatWeOfferItems = [
@@ -34,19 +35,19 @@ const whatWeOfferItems = [
 
 const verticalItems = [
   {
-    icon: <BookOpen className='w-[36px] h-[36px]'/>,
+    icon: <BookOpen className='lg:w-[36px] w-[20px] h-[20px] lg:h-[36px]'/>,
     paragraph: "Deep pool of global mentors and coaches",
   },
   {
-    icon: <BookOpen className='w-[36px] h-[36px]'/>,
+    icon: <BookOpen className='lg:w-[36px] w-[20px] h-[20px] lg:h-[36px]'/>,
     paragraph: "Tailored journeys with measurable impact",
   },
   {
-    icon: <BookOpen className='w-[36px] h-[36px]'/>,
+    icon: <BookOpen className='lg:w-[36px] w-[20px] h-[20px] lg:h-[36px]'/>,
     paragraph: "Focus on both performance and personal growth",
   },
   {
-    icon: <BookOpen className='w-[36px] h-[36px]'/>,
+    icon: <BookOpen className='lg:w-[36px] w-[20px] h-[20px] lg:h-[36px]'/>,
     paragraph: "Seamless integration with succession and performance strategies",
   },
 ];
@@ -70,19 +71,19 @@ const AcceleratorPage = () => {
               priority
             />
             {/* Optional overlay for better text readability */}
-            <div className='absolute inset-0 bg-black/20'></div>
+            <div className='absolute inset-0 bg-black/75'></div>
           </div>
 
 
-          <Navbar />
+          <WhiteNavbar />
           
           {/* Content Overlay */}
-          <div className='relative z-10 flex flex-col justify-center h-full ml-[285px] mr-[285px] px-16'>
+          <div className='relative z-10 flex flex-col justify-center h-full lg:ml-[285px] lg:mr-[285px] lg:px-16 px-4 lg:pt-0'>
             <div className='max-w-4xl space-y-6'>
-              <h1 className='font-bold text-[46px] leading-[60px] text-black'>
+              <h1 className='font-bold text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px] text-white'>
                 Accelerating Leadership Impact Through Mentorship and Development
               </h1>
-              <h2 className='font-medium text-[24px] leading-[40px] text-[#28B673]'>
+              <h2 className='font-medium text-[14px] lg:text-[18px] leading-[20px] lg:leading-[40px] text-[#28B673]'>
                 Cirrcle Up’s Accelerator offerings empower leaders and high-potentials to fast-track their growth, impact, and readiness for greater responsibility.
               </h2>
             </div>
@@ -90,25 +91,27 @@ const AcceleratorPage = () => {
         </div>
 
         {/* Content Section */}
-        <div className='ml-[285px] mr-[285px] h-full pr-16 pl-16'>
+        <div className='lg:ml-[285px] lg:mr-[285px] h-full lg:pr-16 lg:pl-16 px-4'>
             <div className='space-y-4'>
-                <p className='text-[18px] leading-[23px] mt-12'>
+                <p className='text-[14px] lg:text-[18px] leading-[20px] mt-12'>
                 In today’s environment, leadership acceleration is not a luxury—it’s a necessity. Organizations need future-ready leaders who can step up quickly, deliver results, and inspire teams through uncertainty.
                 <br /><br />
 The Accelerators Practice at Cirrcle Up is focused on designing mentoring, coaching, and development journeys that unlock high-potential talent and create lasting business value. Our approach is personalized, evidence-based, and deeply connected to organizational needs.
                 </p>
             </div>
             <div className='cursor-pointer bg-black text-white p-4 w-[290px] h-[50px] flex items-center justify-center mt-12 uppercase font-semibold text-[12px]'>
-              Connect with our experts
+              <Link href='/Contact/GetInTouch' className='cursor-pointer'>
+                Connect with our experts
+              </Link>
             </div>
         </div>
 
         {/* What We Offer Section */}
-        <div className='mt-32'>
+        <div className='mt-16'>
           <WhatWeOfferSection 
             title="Our Accelerator Offerings:" 
             items={whatWeOfferItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-16"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-16"
           />
         </div>
 
@@ -117,11 +120,11 @@ The Accelerators Practice at Cirrcle Up is focused on designing mentoring, coach
           <VerticalInfoList
             title="Why Cirrcle Up:"
             items={verticalItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
           />
         </div>
 
-        <div className='flex justify-center mt-6 mb-8'>
+        <div className='flex justify-center mt-6 mb-8 px-4 lg:px-0'>
           <QuoteBox 
             quote="Great leadership doesn’t wait for years to take shape. With the right support, talent can accelerate to impact in months." 
             author="Animesh Singh Rao" 
@@ -129,9 +132,9 @@ The Accelerators Practice at Cirrcle Up is focused on designing mentoring, coach
         </div>
 
         {/* CTA */}
-        <div className='flex justify-center mt-18'>
+        <div className='flex justify-center mt-18 mb-18 lg:mb-0'>
           <CallToAction 
-            heading=" Supercharge your leadership pipeline."
+            heading="Supercharge your leadership pipeline."
             buttons={[
               { title: "BOOK AN ACCELERATOR CONSULTATION", href: "/Contact/GetInTouch" },
             ]}

@@ -52,21 +52,21 @@ const CallToAction: React.FC<CallToActionProps> = ({
       
       {/* Overlay for better text readability if background image is used */}
       
-      <div className="relative z-20 w-full h-full flex flex-col justify-center px-6">
+      <div className="relative z-20 w-full h-full flex flex-row items-center gap-4 lg:flex-col justify-center lg:px-6 px-4">
         {/* Heading */}
-        <h2 className="text-white text-[28px] font-bold text-center mb-6 leading-tight">
+        <h2 className="w-1/2 lg:w-full text-white text-left text-[24px] lg:text-[28px] font-bold lg:text-center lg:mb-6 leading-tight">
           {heading}
         </h2>
         
         {/* Buttons Container */}
-        <div className={`grid ${getGridLayout()} w-full`}>
+        <div className={`grid lg:${getGridLayout()} w-1/2 lg:w-full`}>
           {validButtons.map((button, index) => (
             <Link 
               key={index} 
               href={button.href}
               className="group"
             >
-              <button className="w-full bg-white text-black font-bold text-[12px] py-3 px-4 hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 uppercase tracking-wide">
+              <button className="w-full bg-white text-black font-bold text-[8px] lg:text-[12px] py-3 px-4 hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 uppercase tracking-wide">
                 {button.title}
               </button>
             </Link>

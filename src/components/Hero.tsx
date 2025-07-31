@@ -101,7 +101,7 @@ const AnimatedHeroSection = () => {
               <h1 className="text-white text-[40px] lg:text-[54px] leading-[60px] font-light">
                 {currentData.title}
               </h1>
-              <p className="text-white text-[18px] lg:text-[24px] leading-[30px] lg:leading-[38px] mt-4">
+              <p className="text-white text-[16px] lg:text-[18px] leading-[30px] lg:leading-[38px] mt-4">
                 {currentData.description}
               </p>
               <Link href={currentData.link}>
