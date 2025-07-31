@@ -26,15 +26,15 @@ const verticalItems = [
 const whatWeOfferItems = [
   {
     heading:
-      "●      Can start times be staggered?",
+      "Can start times be staggered?",
   },
   {
     heading:
-      "●      Can people choose their peak productivity window?",
+      "Can people choose their peak productivity window?",
   },
   {
     heading:
-      "●      Can projects run asynchronously?",
+      "Can projects run asynchronously?",
   },
 ];
 
