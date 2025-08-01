@@ -21,7 +21,7 @@ const VerticalInfoList: React.FC<VerticalInfoListProps> = ({
   return (
     <section className="w-full lg:pr-16 lg:pl-16 lg:pt-8 px-4 py-12">
       <div className={wrapperClassName}>
-        <h1 className="text-[24px] lg:text-[40px] font-medium mb-12">{title}</h1>
+        <h1 className="text-[30px] lg:text-[40px] font-medium mb-12">{title}</h1>
         <div className="space-y-8">
           {items.map((item, index) => (
             <div key={index} className="flex flex-col items-start space-x-6"> 

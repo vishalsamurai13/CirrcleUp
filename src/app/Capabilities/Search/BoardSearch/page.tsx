@@ -30,51 +30,49 @@ const whatWeOfferItems = [
 
 const verticalItems = [
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Deep board diagnostics and current-state evaluation",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Composition planning mapped to future business strategy",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Structured assessments including governance style, collaboration quotient, and stakeholder orientation",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Confidential outreach to high-caliber leaders open to board opportunities",
   },
 ];
 
 const verticalItems2 = [
-    {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
-      paragraph: "Boutique attention with enterprise rigor",
-    },
-    {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
-      paragraph: "Proactive succession and committee planning",
-    },
-    {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
-      paragraph: "Unbiased, transparent shortlisting with measurable fit",
-    },
-    {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
-      paragraph: "A next-gen lens for a next-gen board",
-    },
-    {
-        icon: <BookOpen className='w-[35px] h-[36px]'/>,
-        paragraph: "ficiently post-placement",
-    },
-    {
-        icon: <BookOpen className='w-[35px] h-[36px]'/>,
-        paragraph: "Avg. time to shortlist: 18 business days",
-    },
-
-    
-  ];
+  {
+    icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
+    paragraph: "Boutique attention with enterprise rigor",
+  },
+  {
+    icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
+    paragraph: "Proactive succession and committee planning",
+  },
+  {
+    icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
+    paragraph: "Unbiased, transparent shortlisting with measurable fit",
+  },
+  {
+    icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
+    paragraph: "A next-gen lens for a next-gen board",
+  },
+  {
+    icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
+    paragraph: "ficiently post-placement",
+  },
+  {
+    icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
+    paragraph: "Avg. time to shortlist: 18 business days",
+  },
+];
 
 const BoardsearchPage = () => {
   
@@ -86,11 +84,11 @@ const BoardsearchPage = () => {
         {/* Add padding-top to account for fixed navbar (90px height + 2px divider + some extra space) */}
 
         {/* Header Content */}
-        <div className='pt-[120px] h-full'>
+        <div className='lg:pt-[120px] pt-[50px] h-full'>
             {/* Headings with margins */}
-            <div className='ml-[285px] mr-[285px] mt-12 space-y-4 pr-16 pl-16'>
-                <h1 className='font-bold text-[46px] leading-[60px]'>Building Boards That Shape the Future</h1>
-                <h2 className='font-medium text-[24px] leading-[40px] text-[#28B673]'>Cirrcle Up helps high-growth and legacy companies alike identify board leaders who bring wisdom, diversity, and forward-looking governance.</h2>
+            <div className='lg:ml-[285px] lg:mr-[285px] mt-12 space-y-4 lg:pr-16 lg:pl-16 px-4'>
+                <h1 className='font-medium text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px]'>Building Boards That Shape the Future</h1>
+                <h2 className='font-medium text-[16px] lg:text-[18px] leading-[20px] lg:leading-[40px] text-[#28B673]'>Cirrcle Up helps high-growth and legacy companies alike identify board leaders who bring wisdom, diversity, and forward-looking governance.</h2>
             </div>
             
             {/* Image positioned on leftmost side */}
@@ -105,8 +103,8 @@ const BoardsearchPage = () => {
             </div>
             
             {/* Paragraph with margins */}
-            <div className='ml-[285px] mr-[285px] mt-12 pr-16 pl-16'>
-                <p className='text-[18px] leading-[23px]'>IIn today's volatile business environment, a strong board isn't a formality—it's a competitive advantage. At Cirrcle Up, we partner with organizations to build future-focused boards that bring both strategic oversight and operational insight. Whether you're navigating regulatory complexity, scaling globally, or transitioning leadership, the right board composition is critical.
+            <div className='lg:ml-[285px] lg:mr-[285px] mt-12 lg:pr-16 lg:pl-16 px-4'>
+                <p className='text-[14px] lg:text-[18px] lg:leading-[30px] mt-12'>IIn today's volatile business environment, a strong board isn't a formality—it's a competitive advantage. At Cirrcle Up, we partner with organizations to build future-focused boards that bring both strategic oversight and operational insight. Whether you're navigating regulatory complexity, scaling globally, or transitioning leadership, the right board composition is critical.
                     <br /><br />
                     As a two-year-old firm with deep industry insight and a hunger to prove our edge, we challenge traditional search processes with more agile, transparent, and data-driven methodologies. Our network includes first-time independent directors, domain veterans, and transformation leaders across sectors.</p>
             </div>
@@ -116,11 +114,11 @@ const BoardsearchPage = () => {
         
 
         {/* What We Offer Section */}
-        <div className='mt-32'>
+        <div className='mt-16'>
           <WhatWeOfferSection 
             title="What We Do:" 
             items={whatWeOfferItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-16"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-16"
           />
         </div>
 
@@ -129,12 +127,12 @@ const BoardsearchPage = () => {
           <VerticalInfoList
             title="Our Approach:"
             items={verticalItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
             showDivider={false}
           />
         </div>
 
-        <div className='flex justify-center mt-12'>
+        <div className='flex justify-center mt-12 px-4 lg:px-0'>
             <CaseStudyCard
                 title="Case Study"
                 description="A regional retail chain expanding into Southeast Asia needed governance support. 
@@ -147,13 +145,13 @@ const BoardsearchPage = () => {
           <VerticalInfoList
             title="What Sets Cirrcle Up Apart:"
             items={verticalItems2}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
           />
         </div>
 
-        <div className='flex flex-col mt-18 gap-12  ml-[285px] mr-[285px] pr-16 pl-16'>
-            <h1 className='text-[32px] font-bold'>Who We Serve</h1>
-            <div className='flex gap-6 justify-between'>
+        <div className='flex flex-col mt-18 gap-12  lg:ml-[285px] lg:mr-[285px] lg:pr-16 lg:pl-16 px-4'>
+            <h1 className='text-[24px] lg:text-[40px] font-medium'>Who We Serve</h1>
+            <div className='flex gap-6 justify-between flex-col lg:flex-row items-center'>
                 <div className='flex flex-col gap-4 max-w-[289px]'>
                     <Image src='/Board_Artboard1.png' alt='Artboard 1' width={289} height={150} className='object-cover relative' />
                     <p className='text-center'>High-growth startups institutionalizing governance</p>
@@ -169,7 +167,7 @@ const BoardsearchPage = () => {
             </div>
         </div>
         
-        <div className='flex justify-center mt-32'>
+        <div className='flex justify-center mt-16 px-4 lg:px-0'>
             <QuoteBox 
               quote='The right board doesn’t just guide—it accelerates. We believe in building boards that spark transformation, not just tradition.'
               author='Richa Khandelwal'
@@ -178,7 +176,7 @@ const BoardsearchPage = () => {
         
 
         {/* Vertical Info list 2 */}
-        <div className='flex justify-center mt-18'>
+        <div className='flex justify-center mt-18 pb-10 lg:pb-0'>
           <CallToAction 
             heading="Discover how our search services can reshape your leadership."
             buttons={[

@@ -11,56 +11,56 @@ import React from 'react'
 
 const whatWeOfferItems = [
   {
-    heading: "●      Chief Financial Officer (CFO)",
+    paragraph: "Chief Financial Officer (CFO)",
   },
   {
-    heading: "●      Chief Human Resources Officer (CHRO)",
+    paragraph: "Chief Human Resources Officer (CHRO)",
   },
   {
-    heading: "●      Chief Marketing Officer (CMO)",
+    paragraph: "Chief Marketing Officer (CMO)",
   },
   {
-    heading: "●      Chief Technology/Product Officers (CTO/CPO)",
+    paragraph: "Chief Technology/Product Officers (CTO/CPO)",
   },
   {
-    heading: "●      Chief Operating Officers (COO)",
+    paragraph: "Chief Operating Officers (COO)",
   },
 ];
 
 const verticalItems = [
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Competency gap analysis and succession risk assessment",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Leadership pipeline visibility with 9-box grid frameworks",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Internal development plans with coaching interventions",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "External benchmarking for ready-now talent",
   },
 ];
 
 const verticalItems2 = [
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Function-specific expertise in finance, tech, HR, marketing",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Structured yet nimble frameworks",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Transparent internal mobility planning",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Deep focus on retention post-transition",
     },
   ];
@@ -74,11 +74,11 @@ const CsuiteSuccessionPage = () => {
         <Navbar />
 
         {/* Header Content */}
-        <div className='pt-[120px] h-full'>
+        <div className='lg:pt-[120px] pt-[50px] h-full'>
             {/* Headings with margins */}
-            <div className='ml-[285px] mr-[285px] mt-12 space-y-4 pr-16 pl-16'>
-                <h1 className='font-bold text-[46px] leading-[60px]'>Future-Proofing Governance, One Seat at a Time</h1>
-                <h2 className='font-medium text-[24px] leading-[40px] text-[#28B673]'>Cirrcle Up helps organizations prepare boardrooms for tomorrow—with succession strategies that blend diversity, independence, and evolving stakeholder expectations.</h2>
+            <div className='lg:ml-[285px] lg:mr-[285px] mt-12 space-y-4 lg:pr-16 lg:pl-16 px-4'>
+                <h1 className='font-medium text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px]'>Future-Proofing Governance, One Seat at a Time</h1>
+                <h2 className='font-medium text-[16px] lg:text-[18px] leading-[20px] lg:leading-[40px] text-[#28B673]'>Cirrcle Up helps organizations prepare boardrooms for tomorrow—with succession strategies that blend diversity, independence, and evolving stakeholder expectations.</h2>
             </div>
             
             {/* Image positioned on leftmost side */}
@@ -93,8 +93,8 @@ const CsuiteSuccessionPage = () => {
             </div>
             
             {/* Paragraph with margins */}
-            <div className='ml-[285px] mr-[285px] mt-12 pr-16 pl-16'>
-                <p className='text-[18px] leading-[23px]'>In today’s evolving regulatory and reputational landscape, board succession is no longer optional. It’s essential. Governance effectiveness hinges not only on who’s around the table today, but who’s ready to sit there tomorrow. Cirrcle Up brings a fresh, structured, and forward-looking approach to help your organization plan for seamless board transitions.
+            <div className='lg:ml-[285px] lg:mr-[285px] mt-12 lg:pr-16 lg:pl-16 px-4'>
+                <p className='text-[14px] lg:text-[18px] lg:leading-[30px] mt-12'>In today’s evolving regulatory and reputational landscape, board succession is no longer optional. It’s essential. Governance effectiveness hinges not only on who’s around the table today, but who’s ready to sit there tomorrow. Cirrcle Up brings a fresh, structured, and forward-looking approach to help your organization plan for seamless board transitions.
                     <br /><br />
 Whether you’re institutionalizing governance in a high-growth company or preparing for retiring directors in a family-run business, we help you balance continuity with transformation.</p>
             </div>
@@ -102,11 +102,11 @@ Whether you’re institutionalizing governance in a high-growth company or prepa
         </div>
 
         {/* What We Offer Section */}
-        <div className='mt-32'>
+        <div className='mt-16'>
           <WhatWeOfferSection 
             title="Roles We Cover:" 
             items={whatWeOfferItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-16"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-16"
           />
         </div>
 
@@ -115,14 +115,14 @@ Whether you’re institutionalizing governance in a high-growth company or prepa
           <VerticalInfoList
             title="How We Help:"
             items={verticalItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-12"
             showDivider={false}
           />
         </div>
 
-        <div className='flex flex-col mt-18 gap-12  ml-[285px] mr-[285px] pr-16 pl-16'>
-            <h1 className='text-[32px] font-bold'>Who We Serve</h1>
-            <div className='grid grid-cols-2 gap-16'>
+        <div className='flex flex-col mt-18 gap-12  lg:ml-[285px] lg:mr-[285px] lg:pr-16 lg:pl-16 px-4'>
+            <h1 className='text-[30px] lg:text-[40px] font-medium'>Who We Serve</h1>
+            <div className='lg:grid lg:grid-cols-2 flex flex-col gap-16'>
                 <div className='flex flex-col gap-4 max-w-[400px]'>
                     <Image src='/Succession_Artboard1.png' alt='Artboard 1' width={400} height={150} className='object-cover relative' />
                     <p className='text-center'>Functional benchmarking across sectors</p>
@@ -145,13 +145,13 @@ Whether you’re institutionalizing governance in a high-growth company or prepa
 
         <div className='mt-6'>
           <VerticalInfoList
-            title="Why It Works::"
+            title="Why It Works:"
             items={verticalItems2}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
           />
         </div>
         
-        <div className='flex justify-center mt-32'>
+        <div className='flex justify-center mt-8 px-4 lg:px-0'>
             <QuoteBox 
               quote='Succession at the C-suite is about more than filling shoes—it’s about shaping the future shape of the business.'
               author='Animesh Singh Rao'
@@ -160,7 +160,7 @@ Whether you’re institutionalizing governance in a high-growth company or prepa
         
 
         {/* Vertical Info list 2 */}
-        <div className='flex justify-center mt-18'>
+        <div className='flex justify-center mt-18 pb-10 lg:pb-0'>
           <CallToAction 
             heading="Build your leadership bench before you need it."
             buttons={[

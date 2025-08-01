@@ -13,53 +13,53 @@ import React from 'react'
 
 const whatWeOfferItems = [
   {
-    heading: "●      Newly appointed CXOs",
+    paragraph: "Newly appointed CXOs",
   },
   {
-    heading: "●      High-potential leaders preparing for promotion",
+    paragraph: "High-potential leaders preparing for promotion",
   },
   {
-    heading: "●      Founders transitioning to CEO roles",
+    paragraph: "Founders transitioning to CEO roles",
   },
   {
-    heading: "●      Senior professionals leading through complexity or conflict",
+    paragraph: "Senior professionals leading through complexity or conflict",
   },
 ];
 
 const verticalItems = [
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Diagnostic sessions to uncover leadership goals and blockers",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Matchmaking with experienced executive mentors across domains",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "1-on-1 coaching sessions over 3–6 months",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Integrated feedback loops from peers and stakeholders",
   },
 ];
 
 const verticalItems2 = [
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Mentors from global networks with real business experience",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Coaching that’s equal parts personal and performance-focused",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Structured accountability and progress dashboards",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Integration with development plans and succession roadmaps",
     },
   ];
@@ -74,11 +74,11 @@ const ABperformancePage = () => {
         
 
         {/* Header Content */}
-        <div className='pt-[120px] h-full'>
+        <div className='lg:pt-[120px] pt-[50px] h-full'>
             {/* Headings with margins */}
-            <div className='ml-[285px] mr-[285px] mt-12 space-y-4 pr-16 pl-16'>
-                <h1 className='font-bold text-[46px] leading-[60px]'>Guiding High-Potential Leaders to Peak Impact</h1>
-                <h2 className='font-medium text-[24px] leading-[40px] text-[#28B673]'>Cirrcle Up offers personalized mentoring journeys for senior leaders navigating growth, transition, and transformation.</h2>
+            <div className='lg:ml-[285px] lg:mr-[285px] mt-12 space-y-4 lg:pr-16 lg:pl-16 px-4'>
+                <h1 className='font-medium text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px]'>Guiding High-Potential Leaders to Peak Impact</h1>
+                <h2 className='font-medium text-[16px] lg:text-[18px] leading-[20px] lg:leading-[40px] text-[#28B673]'>Cirrcle Up offers personalized mentoring journeys for senior leaders navigating growth, transition, and transformation.</h2>
             </div>
             
             {/* Image positioned on leftmost side */}
@@ -93,8 +93,8 @@ const ABperformancePage = () => {
             </div>
             
             {/* Paragraph with margins */}
-            <div className='ml-[285px] mr-[285px] mt-12 pr-16 pl-16'>
-                <p className='text-[18px] leading-[23px]'>Even the most successful executives benefit from a sounding board—especially during moments of scaling, transition, or personal reinvention. Our Executive Mentoring program pairs leaders with seasoned mentors and coaches who’ve been there, done that, and know how to ask the questions that unlock clarity.
+            <div className='lg:ml-[285px] lg:mr-[285px] mt-12 lg:pr-16 lg:pl-16 px-4'>
+                <p className='text-[14px] lg:text-[18px] lg:leading-[30px] mt-12'>Even the most successful executives benefit from a sounding board—especially during moments of scaling, transition, or personal reinvention. Our Executive Mentoring program pairs leaders with seasoned mentors and coaches who’ve been there, done that, and know how to ask the questions that unlock clarity.
                     <br /><br />
 At Cirrcle Up, we don’t believe in generic coaching playbooks. Our mentoring journeys are highly personalized, built on trust, and focused on your leader’s business context. Whether it’s preparing for a new role, managing a crisis, or scaling a team, we build a structured path to impact.</p>
             </div>
@@ -102,11 +102,11 @@ At Cirrcle Up, we don’t believe in generic coaching playbooks. Our mentoring j
         </div>
 
         {/* What We Offer Section */}
-        <div className='mt-32'>
+        <div className='mt-16'>
           <WhatWeOfferSection 
             title="Who It's For:" 
             items={whatWeOfferItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-16"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px]"
           />
         </div>
 
@@ -115,12 +115,12 @@ At Cirrcle Up, we don’t believe in generic coaching playbooks. Our mentoring j
           <VerticalInfoList
             title="Mentoring Journey Includes:"
             items={verticalItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
             showDivider={false}
           />
         </div>
 
-        <div className='flex justify-center mt-12'>
+        <div className='flex justify-center mt-12 px-4 lg:px-0'>
             <CaseStudyCard
                 title="Client Story"
                 description="A fast-growing ed-tech startup promoted a CMO to CEO. The transition was proving challenging. Cirrcle Up assigned a mentor with similar domain experience, designed a 90-day acceleration plan, and coached through high-stakes decision-making. Within six months, revenue stabilized and team engagement scores rose 2x."
@@ -131,11 +131,11 @@ At Cirrcle Up, we don’t believe in generic coaching playbooks. Our mentoring j
           <VerticalInfoList
             title="Our Edge:"
             items={verticalItems2}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
           />
         </div>
         
-        <div className='flex justify-center mt-32'>
+        <div className='flex justify-center mt-8 px-4 lg:px-0'>
             <QuoteBox 
               quote='Great leadership isn’t about knowing all the answers—it’s about having the right person to ask the right questions.'
               author='Animesh Singh Rao'
@@ -144,7 +144,7 @@ At Cirrcle Up, we don’t believe in generic coaching playbooks. Our mentoring j
         
 
         {/* Vertical Info list 2 */}
-        <div className='flex justify-center mt-18'>
+        <div className='flex justify-center mt-18 pb-10 lg:pb-0'>
           <CallToAction 
             heading="Let your leaders grow through wisdom, not just experience."
             buttons={[

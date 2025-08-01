@@ -1,121 +1,15 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import ConnectWithExperts from '@/components/CTA2'
 import CallToAction3 from '@/components/CTA3'
 import AnimatedHeroSection from '@/components/Hero'
 import { Footer } from '@/components/layout/Footer'
+import TestimonialsCarousel from '@/components/Testimonials';
 
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React,  { useState } from 'react'
-
-
-const TestimonialsCarousel = () => {
-  const teamMembers = [
-    {
-      name: "Pratik Kumbhar",
-      image: "/Avatar1.jpeg",
-      description:
-        "An Event to explore APAC leadership strategies amid healthcare sector uncertainties and talent.",
-    },
-    {
-      name: "Vishal Sharma",
-      image: "/Avatar2.jpeg",
-      description:
-        "Discover the intersection of innovation and healthcare transformation in a rapidly evolving global market.",
-    },
-    {
-      name: "Marshall Mathers",
-      image: "/Avatar3.jpeg",
-      description:
-        "Join key discussions on talent development and strategic execution across the APAC healthcare ecosystem.",
-    },
-    {
-      name: "Yash Patel",
-      image: "/Avatar4.jpeg",
-      description:
-        "Unlock key insights from regional leaders to shape the future of healthcare delivery and workforce innovation.",
-    },
-    {
-      name: "Snoop Dogg",
-      image: "/Avatar5.jpeg",
-      description:
-        "Connect, learn, and lead with executives focused on actionable strategies for the healthcare industry.",
-    },
-  ];
-
-  const [startIndex, setStartIndex] = useState(0);
-  const visibleCount = 3;
-  const cardWidth = 304; // 280px card + 24px gap
-
-  const handlePrev = () => {
-    setStartIndex((prev) => Math.max(prev - 1, 0));
-  };
-
-  const handleNext = () => {
-    setStartIndex((prev) =>
-      Math.min(prev + 1, teamMembers.length - visibleCount)
-    );
-  };
-
-  return (
-    <div className="bg-[#eeeeee] pt-16 pb-64 relative z-0">
-      <div className="flex flex-col gap-12 lg:pt-12 lg:pb-12 lg:ml-[285px] lg:mr-[285px] overflow-hidden">
-        {/* Header */}
-        <div className="flex justify-between">
-          <h1 className="text-4xl font-light mb-12">Our Testimonials</h1>
-          <div className="flex gap-4">
-            <button
-              onClick={handlePrev}
-              disabled={startIndex === 0}
-              className="w-10 h-10 border border-black rounded-full flex items-center justify-center text-xl disabled:opacity-30 cursor-pointer"
-            >
-              ←
-            </button>
-            <button
-              onClick={handleNext}
-              disabled={startIndex >= teamMembers.length - visibleCount}
-              className="w-10 h-10 border border-black rounded-full flex items-center justify-center text-xl disabled:opacity-30 cursor-pointer"
-            >
-              →
-            </button>
-          </div>
-        </div>
-
-        {/* Sliding Container */}
-        <div className="relative w-full overflow-hidden">
-          <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{
-              transform: `translateX(-${startIndex * cardWidth}px)`,
-              width: `${teamMembers.length * cardWidth}px`,
-            }}
-          >
-            {teamMembers.map((member, index) => (
-              <div key={index} className="w-[280px] mr-6 flex-shrink-0">
-                <div className="flex flex-col gap-2 items-center justify-center">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-32 h-32 rounded-full object-cover"
-                  />
-                  <h3 className="font-semibold leading-snug mt-4">
-                    {member.name}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-4 text-center max-w-[270px]">
-                    {member.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+import React from 'react'
 
 
 const page = () => {

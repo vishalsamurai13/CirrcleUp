@@ -12,53 +12,53 @@ import React from 'react'
 
 const whatWeOfferItems = [
   {
-    heading: "●      Transition planning for both internal and external successors",
+    paragraph: "Transition planning for both internal and external successors",
   },
   {
-    heading: "●      Pre-departure documentation and knowledge transfer design",
+    paragraph: "Pre-departure documentation and knowledge transfer design",
   },
   {
-    heading: "●      Cultural alignment workshops with leadership teams",
+    paragraph: "Cultural alignment workshops with leadership teams",
   },
   {
-    heading: "●      CEO onboarding journeys with clear 30-60-90 plans",
+    paragraph: "CEO onboarding journeys with clear 30-60-90 plans",
   },
 ];
 
 const verticalItems = [
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Successor immersion planning (stakeholders, business model, key metrics",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Alignment with board/investor expectations",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Executive coaching and transition support for new CEOs",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Internal communication planning for change management",
   },
 ];
 
 const verticalItems2 = [
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Empathetic yet structured transition management",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Tailored onboarding journeys aligned to strategy",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Deep founder-CEO transition expertise",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Post-transition feedback and recalibration checkpoints",
     },
   ];
@@ -72,11 +72,11 @@ const ABperformancePage = () => {
         <Navbar />
 
         {/* Header Content */}
-        <div className='pt-[120px] h-full'>
+        <div className='lg:pt-[120px] pt-[50px] h-full'>
             {/* Headings with margins */}
-            <div className='ml-[285px] mr-[285px] mt-12 space-y-4 pr-16 pl-16'>
-                <h1 className='font-bold text-[46px] leading-[60px]'>Ensuring Seamless and Strategic CEO Handover</h1>
-                <h2 className='font-medium text-[24px] leading-[40px] text-[#28B673]'>Cirrcle Up helps companies plan, manage, and support CEO transitions—so change becomes a catalyst, not a crisis.</h2>
+            <div className='lg:ml-[285px] lg:mr-[285px] mt-12 space-y-4 lg:pr-16 lg:pl-16 px-4'>
+                <h1 className='font-medium text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px]'>Ensuring Seamless and Strategic CEO Handover</h1>
+                <h2 className='font-medium text-[16px] lg:text-[18px] leading-[20px] lg:leading-[40px] text-[#28B673]'>Cirrcle Up helps companies plan, manage, and support CEO transitions—so change becomes a catalyst, not a crisis.</h2>
             </div>
             
             {/* Image positioned on leftmost side */}
@@ -91,8 +91,8 @@ const ABperformancePage = () => {
             </div>
             
             {/* Paragraph with margins */}
-            <div className='ml-[285px] mr-[285px] mt-12 pr-16 pl-16'>
-                <p className='text-[18px] leading-[23px]'>When a CEO transitions—whether due to planned retirement, promotion, M&A, or crisis—the impact is felt across every layer of the organization. It affects culture, investor confidence, talent retention, and strategic continuity. At Cirrcle Up, we treat CEO transitions with the depth, diligence, and empathy they deserve.
+            <div className='lg:ml-[285px] lg:mr-[285px] mt-12 lg:pr-16 lg:pl-16 px-4'>
+                <p className='text-[14px] lg:text-[18px] lg:leading-[30px] mt-12'>When a CEO transitions—whether due to planned retirement, promotion, M&A, or crisis—the impact is felt across every layer of the organization. It affects culture, investor confidence, talent retention, and strategic continuity. At Cirrcle Up, we treat CEO transitions with the depth, diligence, and empathy they deserve.
                   <br />  <br />
 We work with boards, founders, and CHROs to ensure transitions are not just seamless but strategic. From pre-transition planning to 180-day onboarding support, we help new CEOs hit the ground running—and stay aligned.</p>
             </div>
@@ -100,11 +100,11 @@ We work with boards, founders, and CHROs to ensure transitions are not just seam
         </div>
 
         {/* What We Offer Section */}
-        <div className='mt-32'>
+        <div className='mt-16'>
           <WhatWeOfferSection 
             title="Our CEO Transition Services:" 
             items={whatWeOfferItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-16"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px]"
           />
         </div>
 
@@ -113,7 +113,7 @@ We work with boards, founders, and CHROs to ensure transitions are not just seam
           <VerticalInfoList
             title="Key Components:"
             items={verticalItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px]"
             showDivider={false}
           />
         </div>
@@ -122,11 +122,11 @@ We work with boards, founders, and CHROs to ensure transitions are not just seam
           <VerticalInfoList
             title="What Makes Cirrcle Up Different:"
             items={verticalItems2}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px]"
           />
         </div>
         
-        <div className='flex justify-center mt-32'>
+        <div className='flex justify-center mt-8 px-4 lg:px-0'>
             <QuoteBox 
               quote='A CEO transition isn’t just a moment—it’s a movement. We help you lead it with clarity and confidence.'
               author='Animesh Singh Rao'
@@ -135,7 +135,7 @@ We work with boards, founders, and CHROs to ensure transitions are not just seam
         
 
         {/* Vertical Info list 2 */}
-        <div className='flex justify-center mt-18'>
+        <div className='flex justify-center mt-18 pb-10 lg:pb-0'>
           <CallToAction 
             heading="Make your CEO transition a moment of momentum."
             buttons={[

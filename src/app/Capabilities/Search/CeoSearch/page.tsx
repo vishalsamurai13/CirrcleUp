@@ -29,38 +29,38 @@ const whatWeOfferItems = [
 
 const verticalItems = [
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "In-depth stakeholder alignment to define strategic leadership needs",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Bespoke success profile: Values, capabilities, culture match",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "360° referencing and track record analysis",
   },
   {
-    icon: <MoveRight className='w-[35px] h-[36px] text-[#28B673]'/>,
+    icon: <MoveRight className='w-[20px] lg:w-[35px] h-[36px] text-[#28B673]'/>,
     paragraph: "Transition coaching and post-placement integration for up to 6 months",
   },
 ];
 
 const verticalItems2 = [
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Nimble execution, without compromising rigor",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Sharp understanding of founder-CEO vs. professional CEO transitions",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Transparent reporting at every milestone",
     },
     {
-      icon: <BookOpen className='w-[35px] h-[36px]'/>,
+      icon: <BookOpen className='w-[20px] h-[20px] lg:w-[36px] lg:h-[36px]'/>,
       paragraph: "Post-placement support to reduce ramp-up risks",
     },
   ];
@@ -75,11 +75,11 @@ const CeoSearchPage = () => {
         {/* Add padding-top to account for fixed navbar (90px height + 2px divider + some extra space) */}
 
         {/* Header Content */}
-        <div className='pt-[120px] h-full'>
+        <div className='lg:pt-[120px] pt-[50px] h-full'>
             {/* Headings with margins */}
-            <div className='ml-[285px] mr-[285px] mt-12 space-y-4 pr-16 pl-16'>
-                <h1 className='font-bold text-[46px] leading-[60px]'>Appointing the Visionaries of Tomorrow</h1>
-                <h2 className='font-medium text-[24px] leading-[40px] text-[#28B673]'>At Cirrcle Up, we help organizations identify and secure CEOs who can thrive in ambiguity, inspire trust, and create lasting value.</h2>
+            <div className='lg:ml-[285px] lg:mr-[285px] mt-12 space-y-4 lg:pr-16 lg:pl-16 px-4'>
+                <h1 className='font-medium text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px]'>Appointing the Visionaries of Tomorrow</h1>
+                <h2 className='font-medium text-[16px] lg:text-[18px] leading-[20px] lg:leading-[40px] text-[#28B673]'>At Cirrcle Up, we help organizations identify and secure CEOs who can thrive in ambiguity, inspire trust, and create lasting value.</h2>
             </div>
             
             {/* Image positioned on leftmost side */}
@@ -94,8 +94,8 @@ const CeoSearchPage = () => {
             </div>
             
             {/* Paragraph with margins */}
-            <div className='ml-[285px] mr-[285px] mt-12 pr-16 pl-16'>
-                <p className='text-[18px] leading-[23px]'>A CEO is more than an executive—they're the living expression of your organization's purpose, strategy, and culture. Finding the right one demands deep strategic clarity, instinctive people sense, and a data-backed approach. At Cirrcle Up, we bring all three to the table.
+            <div className='lg:ml-[285px] lg:mr-[285px] mt-12 lg:pr-16 lg:pl-16 px-4'>
+                <p className='text-[14px] lg:text-[18px] lg:leading-[30px] mt-12'>A CEO is more than an executive—they're the living expression of your organization's purpose, strategy, and culture. Finding the right one demands deep strategic clarity, instinctive people sense, and a data-backed approach. At Cirrcle Up, we bring all three to the table.
                     <br /><br />
 In just two years, we’ve helped fast-scaling firms and legacy giants alike identify CEOs who don’t just lead—but transform. Our proprietary process blends leadership psychology, market mapping, and future-readiness assessments to help you make one of the most consequential decisions for your business.</p>
             </div>
@@ -105,11 +105,11 @@ In just two years, we’ve helped fast-scaling firms and legacy giants alike ide
         
 
         {/* What We Offer Section */}
-        <div className='mt-32'>
+        <div className='mt-16'>
           <WhatWeOfferSection 
             title="Our CEO Search Capabilities:" 
             items={whatWeOfferItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-16"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-16"
           />
         </div>
 
@@ -118,7 +118,7 @@ In just two years, we’ve helped fast-scaling firms and legacy giants alike ide
           <VerticalInfoList
             title="How We Do It:"
             items={verticalItems}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
             showDivider={false}
           />
         </div>
@@ -128,11 +128,11 @@ In just two years, we’ve helped fast-scaling firms and legacy giants alike ide
           <VerticalInfoList
             title="What Makes Cirrcle Up Different:"
             items={verticalItems2}
-            wrapperClassName="ml-[285px] mr-[285px] py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
           />
         </div>
         
-        <div className='flex justify-center mt-32'>
+        <div className='flex justify-center mt-16 px-4 lg:px-0'>
             <QuoteBox 
               quote='A CEO appointment is both an ending and a beginning. Our job is to ensure it’s the beginning of your boldest chapter yet.'
               author='Animesh Singh Rao'
@@ -141,7 +141,7 @@ In just two years, we’ve helped fast-scaling firms and legacy giants alike ide
         
 
         {/* Vertical Info list 2 */}
-        <div className='flex justify-center mt-18'>
+        <div className='flex justify-center mt-18 pb-10 lg:pb-0'>
           <CallToAction 
             heading="Let’s find the CEO who will define your next decade."
             buttons={[
