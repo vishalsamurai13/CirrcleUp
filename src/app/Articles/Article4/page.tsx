@@ -44,16 +44,16 @@ const verticalItems2 = [
 
 const whatWeOfferItems = [
   {
-    heading: "●      Clarity in JD = Clarity in Vision",
+    heading: "Clarity in JD = Clarity in Vision",
   },
   {
-    heading: "●      Well-structured interviews = Respect for Time",
+    heading: "Well-structured interviews = Respect for Time",
   },
   {
-    heading: "●      Feedback after rejections = Commitment to Growth",
+    heading: "Feedback after rejections = Commitment to Growth",
   },
   {
-    heading: "●      Human communication = Human-first culture",
+    heading: "Human communication = Human-first culture",
   },
 ];
 
