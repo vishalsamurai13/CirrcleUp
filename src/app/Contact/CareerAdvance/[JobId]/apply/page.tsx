@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { Footer } from '@/components/layout/Footer'
 import Navbar from '@/components/layout/Navbar'
 import JobApplicationForm from '@/components/JobApplicationForm' // Adjust path as needed
 import { useParams, useRouter } from 'next/navigation'
@@ -69,19 +68,19 @@ const JobApplicationPage = () => {
             <Navbar />
             <div className='pt-[120px] w-full h-full'>
                 {/* Back Button */}
-                <div className='ml-[285px] mr-[285px] p-4'>
+                <div className='px-4 lg:ml-[285px] lg:mr-[285px] lg:p-16 py-4'>
                     <button 
                         onClick={() => router.back()}
-                        className='flex items-center gap-2 text-[#28B673] hover:text-[#22a05e] transition-colors'
+                        className='flex items-center gap-2 text-[#28B673] hover:text-[#22a05e] transition-colors text-sm lg:text-base'
                     >
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="16" height="16" className='lg:w-5 lg:h-5' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                         Back to Job Details
                     </button>
                 </div>
                 
-                <div className='flex justify-center items-center p-16 pt-8'>
+                <div className='flex justify-center items-center px-4 py-8 lg:p-16 lg:pt-8'>
                     <JobApplicationForm 
                         jobNumber={jobId}
                         title={jobData.title}
@@ -89,7 +88,6 @@ const JobApplicationPage = () => {
                     />
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

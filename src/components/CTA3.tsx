@@ -24,7 +24,7 @@ const CallToAction3: React.FC<CallToActionProps> = ({
 
   return (
     <div
-      className={`relative w-[950px] h-[315px] overflow-hidden text-white ${className}`}
+      className={`relative w-full lg:w-[950px] lg:h-[315px] overflow-hidden text-white ${className}`}
     >
       {/* Background image */}
       <Image
@@ -34,22 +34,19 @@ const CallToAction3: React.FC<CallToActionProps> = ({
         className="object-cover object-center z-10"
         priority
       />
-
-      {/* Black overlay for readability */}
-      <div className="absolute inset-0 bg-black/50 z-0" />
-
+      
       {/* Content */}
-      <div className="relative z-10 w-full h-full flex flex-col lg:flex-row  items-center gap-12 lg:gap-24 lg:px-12 px-4 py-5">
+      <div className="relative z-10 w-full h-full flex flex-col lg:flex-row items-center gap-12 lg:gap-24 lg:px-12 px-4 py-5">
         {/* Heading & description */}
         <div className="mb-8 flex flex-col">
-          <h1 className="text-[28px] font-medium mb-6">{heading}</h1>
-          <p className="text-[16px] max-w-[500px] leading-relaxed">
+          <h1 className="text-[24px] lg:text-[28px] font-medium mb-6">{heading}</h1>
+          <p className="text-[14px] lg:text-[16px] max-w-[500px] leading-relaxed">
             {description}
           </p>
         </div>
 
         {/* Buttons (stacked) */}
-        <div className="flex flex-col gap-12 max-w-[400px]">
+        <div className="flex flex-col gap-4 lg:gap-12 max-w-[400px]">
           {validButtons.map((button, index) => (
             <Link key={index} href={button.href}>
               <button className="bg-white text-black font-bold text-[12px] w-[250px] py-3 px-4 uppercase cursor-pointer tracking-wide hover:bg-gray-200 transition duration-300">

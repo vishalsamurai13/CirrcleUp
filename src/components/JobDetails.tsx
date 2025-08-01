@@ -28,33 +28,33 @@ const JobDetailsComponent = ({
   onSave = () => console.log("Save button clicked")
 }) => {
   return (
-    <div className="w-[950px] mx-auto bg-gray-100 rounded-lg p-8 font-sans">
+    <div className="w-full max-w-[950px] mx-auto bg-gray-100 rounded-lg p-4 lg:p-8 font-sans">
       {/* Header */}
-      <div className="mb-8">
-        <h2 className="text-gray-600 text-lg font-medium mb-4">Job #{jobNumber}</h2>
-        <h1 className="text-3xl font-bold text-gray-800 mb-6">{title}</h1>
+      <div className="mb-6 lg:mb-8">
+        <h2 className="text-gray-600 text-base lg:text-lg font-medium mb-3 lg:mb-4">Job #{jobNumber}</h2>
+        <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4 lg:mb-6 leading-tight">{title}</h1>
       </div>
 
       {/* About the Job */}
-      <div className="mb-8">
-        <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-          <span className="w-2 h-2 bg-gray-800 rounded-full mr-3"></span>
+      <div className="mb-6 lg:mb-8">
+        <h3 className="text-lg lg:text-xl font-bold text-gray-800 mb-3 lg:mb-4 flex items-center">
+          <span className="w-2 h-2 bg-gray-800 rounded-full mr-3 flex-shrink-0"></span>
           About the Job
         </h3>
-        <p className="text-gray-700 leading-relaxed text-base">
+        <p className="text-gray-700 leading-relaxed text-sm lg:text-base">
           {aboutTheJob}
         </p>
       </div>
 
       {/* Responsibilities */}
-      <div className="mb-8">
-        <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-          <span className="w-2 h-2 bg-gray-800 rounded-full mr-3"></span>
+      <div className="mb-6 lg:mb-8">
+        <h3 className="text-lg lg:text-xl font-bold text-gray-800 mb-3 lg:mb-4 flex items-center">
+          <span className="w-2 h-2 bg-gray-800 rounded-full mr-3 flex-shrink-0"></span>
           Responsibilities
         </h3>
-        <ol className="space-y-2">
+        <ol className="space-y-2 lg:space-y-2">
           {responsibilities.map((responsibility, index) => (
-            <li key={index} className="text-gray-700 leading-relaxed text-base">
+            <li key={index} className="text-gray-700 leading-relaxed text-sm lg:text-base">
               {index + 1}. {responsibility}
             </li>
           ))}
@@ -62,14 +62,14 @@ const JobDetailsComponent = ({
       </div>
 
       {/* Requirements */}
-      <div className="mb-8">
-        <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-          <span className="w-2 h-2 bg-gray-800 rounded-full mr-3"></span>
+      <div className="mb-6 lg:mb-8">
+        <h3 className="text-lg lg:text-xl font-bold text-gray-800 mb-3 lg:mb-4 flex items-center">
+          <span className="w-2 h-2 bg-gray-800 rounded-full mr-3 flex-shrink-0"></span>
           Requirements
         </h3>
-        <ol className="space-y-2">
+        <ol className="space-y-2 lg:space-y-2">
           {requirements.map((requirement, index) => (
-            <li key={index} className="text-gray-700 leading-relaxed text-base">
+            <li key={index} className="text-gray-700 leading-relaxed text-sm lg:text-base">
               {index + 1}. {requirement}
             </li>
           ))}
@@ -77,14 +77,14 @@ const JobDetailsComponent = ({
       </div>
 
       {/* Benefits */}
-      <div className="mb-8">
-        <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-          <span className="w-2 h-2 bg-gray-800 rounded-full mr-3"></span>
+      <div className="mb-6 lg:mb-8">
+        <h3 className="text-lg lg:text-xl font-bold text-gray-800 mb-3 lg:mb-4 flex items-center">
+          <span className="w-2 h-2 bg-gray-800 rounded-full mr-3 flex-shrink-0"></span>
           Benefits
         </h3>
-        <ol className="space-y-2">
+        <ol className="space-y-2 lg:space-y-2">
           {benefits.map((benefit, index) => (
-            <li key={index} className="text-gray-700 leading-relaxed text-base">
+            <li key={index} className="text-gray-700 leading-relaxed text-sm lg:text-base">
               {index + 1}. {benefit}
             </li>
           ))}
@@ -92,23 +92,23 @@ const JobDetailsComponent = ({
       </div>
 
       {/* Closing Text */}
-      <div className="mb-8">
-        <p className="text-gray-700 leading-relaxed text-base">
+      <div className="mb-6 lg:mb-8">
+        <p className="text-gray-700 leading-relaxed text-sm lg:text-base">
           {closingText}
         </p>
       </div>
 
       {/* Action Buttons */}
-      <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row gap-3 lg:gap-4">
         <button 
           onClick={onApply}
-          className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-200"
+          className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 lg:px-8 rounded-full transition-colors duration-200 text-sm lg:text-base text-center"
         >
           APPLY NOW
         </button>
         <button 
           onClick={onSave}
-          className="bg-white hover:bg-gray-50 text-gray-700 font-semibold py-3 px-8 rounded-full border-2 border-gray-300 transition-colors duration-200"
+          className="bg-white hover:bg-gray-50 text-gray-700 font-semibold py-3 px-6 lg:px-8 rounded-full border-2 border-gray-300 transition-colors duration-200 text-sm lg:text-base text-center"
         >
           SAVE THIS JOB
         </button>

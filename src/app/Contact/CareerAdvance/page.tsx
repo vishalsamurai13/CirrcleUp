@@ -58,16 +58,16 @@ const CareerAdvance = () => {
     return (
         <div className='text-black bg-white min-h-screen overflow-x-hidden'>
             <Navbar />
-            <div className='pt-[120px] w-full h-full'>
-                <div className='ml-[285px] mr-[285px] p-16 flex flex-col gap-12'>
+            <div className='lg:pt-[120px] pt-[80px] w-full h-full'>
+                <div className='lg:ml-[285px] lg:mr-[285px] lg:p-16 px-4 py-10 flex flex-col gap-8 lg:gap-12'>
 
-                    <h1 className='text-[67px] leading-[70px] text-[#28B673] font-medium'>
+                    <h1 className='text-[40px] lg:text-[60px] leading-[50px] text-[#28B673] font-medium'>
                         Open Roles
                     </h1>
 
                     <p>Discover all Job Openings in our company →</p>
 
-                    <div className='flex flex-col gap-8'>
+                    <div className='flex flex-col gap-8 mt-6'>
                         {jobData.map((job) => (
                             <JobCard2
                                 key={job.id}
