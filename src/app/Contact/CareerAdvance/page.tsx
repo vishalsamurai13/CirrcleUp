@@ -46,7 +46,7 @@ const CareerAdvance = () => {
             openings: 8
         },
         {
-            id: "17892108",
+            id: "17692108",
             title: "Data Scientist",
             experience: "3-5 Years",
             location: "Delhi",
