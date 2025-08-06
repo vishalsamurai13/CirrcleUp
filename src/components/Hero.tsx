@@ -82,7 +82,7 @@ const AnimatedHeroSection = () => {
                 quality={90}
               />
               {/* Dark Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-40 " />
+              <div className="absolute inset-0 bg-black bg-opacity-40" />
             </div>
           ))}
         </div>

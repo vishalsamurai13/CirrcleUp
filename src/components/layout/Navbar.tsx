@@ -40,7 +40,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Capabilities', id: 'capabilities', component: <Capabilities /> },
-    { name: 'Case Studies', id: 'articles', component: <Articles /> },
+    { name: 'Articles', id: 'articles', component: <Articles /> },
     { name: 'About', id: 'about', component: <About /> },
     { name: 'Contact Us', id: 'careers', component: <Careers /> },
   ];
@@ -186,7 +186,7 @@ export function WhiteNavbar() {
 
   const navLinks = [
     { name: 'Capabilities', id: 'capabilities', component: <Capabilities /> },
-    { name: 'Case Studies', id: 'articles', component: <Articles /> },
+    { name: 'Articles', id: 'articles', component: <Articles /> },
     { name: 'About', id: 'about', component: <About /> },
     { name: 'Contact Us', id: 'careers', component: <Careers /> },
   ];
@@ -371,12 +371,28 @@ export const Capabilities = () => {
           ))}
         </div>
       </div>
-      <div className='hidden lg:block bg-[#28B673] w-2/8 p-3'>
-        <h1 className='text-[46px] leading-tight font-semibold text-white'>The Science Behind C-Suite Success: Your CxOs Need This Skill</h1>
-        <p className='text-[15px] text-white mt-8'>The requirements of a high-performing CxO have fundamentally shifted - it's time for a new approach</p>
-        <Link href='/Capabilities/Search'>
-          <ArrowRight className='text-white mt-4 w-8 h-8' />
-        </Link>
+      <div className='hidden lg:block relative w-2/8 p-3 overflow-hidden'>
+        {/* Background Image */}
+        <Image
+          src="/GreenBg.png" // Make sure it's placed in the /public folder
+          alt="Green background"
+          fill
+          className="object-cover"
+          priority
+        />
+
+        {/* Overlay content */}
+        <div className="relative z-10 p-4">
+          <h1 className='text-[46px] leading-tight font-semibold text-white'>
+            The Science Behind C-Suite Success: Your CxOs Need This Skill
+          </h1>
+          <p className='text-[15px] text-white mt-8'>
+            The requirements of a high-performing CxO have fundamentally shifted - it's time for a new approach
+          </p>
+          <Link href='/Capabilities/Search'>
+            <ArrowRight className='text-white mt-4 w-8 h-8' />
+          </Link>
+        </div>
       </div>
     </div>
   )
@@ -421,12 +437,28 @@ export const Articles = () => {
           </div>
         </div>
       </div>
-      <div className='hidden lg:block bg-[#28B673] w-2/8 p-3'>
-        <h1 className='text-[46px] leading-tight font-semibold text-white'>Board & CEO Advisory</h1>
-        <p className='text-[15px] text-white mt-8'>Is your board ready for what is next? We help boards and CEOs face the unprecedented challenges that shape our world—from disruptive technology to shifting demographics to pressure from investors and regulators.</p>
-        <Link href='/Capabilities/Search'>
-          <ArrowRight className='text-white mt-4 w-8 h-8' />
-        </Link>
+      <div className='hidden lg:block relative w-2/8 p-3 overflow-hidden'>
+        {/* Background Image */}
+        <Image
+          src="/GreenBg.png" // Make sure it's placed in the /public folder
+          alt="Green background"
+          fill
+          className="object-cover"
+          priority
+        />
+
+        {/* Overlay content */}
+        <div className="relative z-10 p-4">
+          <h1 className='text-[46px] leading-tight font-semibold text-white'>
+            Board & CEO Advisory
+          </h1>
+          <p className='text-[15px] text-white mt-8'>
+          Is your board ready for what is next? We help boards and CEOs face the unprecedented challenges that shape our world—from disruptive technology to shifting demographics to pressure from investors and regulators.
+          </p>
+          <Link href='/Capabilities/Search'>
+            <ArrowRight className='text-white mt-4 w-8 h-8' />
+          </Link>
+        </div>
       </div>
     </div>
   )
@@ -457,12 +489,28 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <div className='hidden lg:block bg-[#28B673] w-2/8 p-3'>
-        <h1 className='text-[46px] leading-tight font-semibold text-white'>Consultant Directory</h1>
-        <p className='text-[15px] text-white mt-8'>We share the latest CEO turnover data across listed companies globally. Each quarter, you'll find the proportion of CEO departures and appointments globally, as well as trends on CEO appointments by gender, tenure, and whether CEOs are internal or external hires.</p>
-        <Link href='/Capabilities/Search'>
-          <ArrowRight className='text-white mt-4 w-8 h-8' />
-        </Link>
+      <div className='hidden lg:block relative w-2/8 p-3 overflow-hidden'>
+        {/* Background Image */}
+        <Image
+          src="/GreenBg.png" // Make sure it's placed in the /public folder
+          alt="Green background"
+          fill
+          className="object-cover"
+          priority
+        />
+
+        {/* Overlay content */}
+        <div className="relative z-10 p-4">
+          <h1 className='text-[46px] leading-tight font-semibold text-white'>
+            Consultant Directory
+          </h1>
+          <p className='text-[15px] text-white mt-8'>
+          We share the latest CEO turnover data across listed companies globally. Each quarter, you'll find the proportion of CEO departures and appointments globally, as well as trends on CEO appointments by gender, tenure, and whether CEOs are internal or external hires.
+          </p>
+          <Link href='/Capabilities/Search'>
+            <ArrowRight className='text-white mt-4 w-8 h-8' />
+          </Link>
+        </div>
       </div>
     </div>
   )
@@ -499,12 +547,28 @@ export const Careers = () => {
           </div>
         </div>
       </div>
-      <div className='hidden lg:block bg-[#28B673] w-2/8 p-3'>
-        <h1 className='text-[46px] leading-tight font-semibold text-white'>Request for Consultation</h1>
-        <p className='text-[15px] text-white mt-8'>We share the latest CEO turnover data across listed companies globally. Each quarter, you'll find the proportion of CEO departures and appointments globally, as well as trends on CEO appointments by gender, tenure, and whether CEOs are internal or external hires.</p>
-        <Link href='/Capabilities/Search'>
-          <ArrowRight className='text-white mt-4 w-8 h-8' />
-        </Link>
+      <div className='hidden lg:block relative w-2/8 p-3 overflow-hidden'>
+        {/* Background Image */}
+        <Image
+          src="/GreenBg.png" // Make sure it's placed in the /public folder
+          alt="Green background"
+          fill
+          className="object-cover"
+          priority
+        />
+
+        {/* Overlay content */}
+        <div className="relative z-10 p-4">
+          <h1 className='text-[46px] leading-tight font-semibold text-white'>
+            Request for Consultation
+          </h1>
+          <p className='text-[15px] text-white mt-8'>
+          We share the latest CEO turnover data across listed companies globally. Each quarter, you'll find the proportion of CEO departures and appointments globally, as well as trends on CEO appointments by gender, tenure, and whether CEOs are internal or external hires.
+          </p>
+          <Link href='/Capabilities/Search'>
+            <ArrowRight className='text-white mt-4 w-8 h-8' />
+          </Link>
+        </div>
       </div>
     </div>
   )

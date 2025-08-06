@@ -83,9 +83,9 @@ const CeoSearchPage = () => {
             </div>
             
             {/* Image positioned on leftmost side */}
-            <div className='flex justify-start mt-8'>
+            <div className='flex justify-start mt-8 lg:max-h-[330px]'>
                 <Image 
-                    src="/board_ceo.png" 
+                    src="/board_ceo.jpg"
                     alt="Board meeting visualization" 
                     width={1090} 
                     height={330}
@@ -128,7 +128,7 @@ In just two years, we’ve helped fast-scaling firms and legacy giants alike ide
           <VerticalInfoList
             title="What Makes Cirrcle Up Different:"
             items={verticalItems2}
-            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px]"
           />
         </div>
         

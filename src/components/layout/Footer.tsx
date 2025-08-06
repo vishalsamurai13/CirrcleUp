@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ArrowRight, Twitter, MessageCircle, Facebook, Youtube, Linkedin } from 'lucide-react'
+import { ArrowRight, Twitter, MessageCircle, Facebook, Youtube, Linkedin, Mail } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -34,11 +34,11 @@ export const Footer = () => {
                 <div className='flex flex-col space-y-4'>
                     <h2 className='uppercase text-[14px] text-[#5C5C5C] font-medium'>QUICK LINKS</h2>
                     <div className='leading-[24px] text-[16px] font-semibold flex flex-col space-y-1'>
-                        <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>People</Link>
-                        <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>Who We Are</Link>
-                        <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>Careers</Link>
-                        <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>Newsroom</Link>
-                        <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>Locations</Link>
+                    <Link href='/About/People' className='hover:text-[#28B673] transition-colors duration-200'>People</Link>
+                    <Link href='/About/WhoWeAre' className='hover:text-[#28B673] transition-colors duration-200'>Who We Are</Link>
+                    <Link href='/About/Careers' className='hover:text-[#28B673] transition-colors duration-200'>Careers</Link>
+                    {/* <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>Newsroom</Link> */}
+                    <Link href='/Contact/LocalOffice' className='hover:text-[#28B673] transition-colors duration-200'>Location</Link>
                     </div>
                 </div>
 
@@ -52,19 +52,13 @@ export const Footer = () => {
             {/* Social Media Icons - Mobile */}
             <div className='flex justify-center items-center gap-4'>
                 <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
-                    <Twitter size={20} className="text-[#1DA1F2] group-hover:text-[#0d8bd9] transition-colors duration-200" />
-                </div>
-                <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
                     <MessageCircle size={20} className="text-[#25D366] group-hover:text-[#128C7E] transition-colors duration-200" />
                 </div>
                 <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
-                    <Facebook size={20} className="text-[#1877F2] group-hover:text-[#166fe5] transition-colors duration-200" />
-                </div>
-                <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
-                    <Youtube size={20} className="text-[#FF0000] group-hover:text-[#cc0000] transition-colors duration-200" />
-                </div>
-                <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
                     <Linkedin size={20} className="text-[#0077B5] group-hover:text-[#005885] transition-colors duration-200" />
+                </div>
+                <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
+                    <Mail size={20} className="text-[#ff0000] group-hover:text-[#ff0000] transition-colors duration-200" />
                 </div>
             </div>
         </div>
@@ -75,11 +69,11 @@ export const Footer = () => {
             <div className='max-w-[137px] flex flex-col space-y-6'>
                 <h2 className='uppercase text-[14px] text-[#5C5C5C] font-medium'>Quick Links</h2>
                 <div className='leading-[28px] text-[19px] font-semibold flex flex-col'>
-                    <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>People</Link>
-                    <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>Who We Are</Link>
-                    <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>Careers</Link>
-                    <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>Newsroom</Link>
-                    <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>Location</Link>
+                    <Link href='/About/People' className='hover:text-[#28B673] transition-colors duration-200'>People</Link>
+                    <Link href='/About/WhoWeAre' className='hover:text-[#28B673] transition-colors duration-200'>Who We Are</Link>
+                    <Link href='/About/Careers' className='hover:text-[#28B673] transition-colors duration-200'>Careers</Link>
+                    {/* <Link href='/' className='hover:text-[#28B673] transition-colors duration-200'>Newsroom</Link> */}
+                    <Link href='/Contact/LocalOffice' className='hover:text-[#28B673] transition-colors duration-200'>Location</Link>
                 </div>
             </div>
 
@@ -100,21 +94,15 @@ export const Footer = () => {
         <div className='hidden md:flex flex-row mt-12 px-4 w-[1080px] justify-between items-center'>
             
             {/* Social Media Icons */}
-            <div className='flex items-center gap-4'>
-                <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
-                    <Twitter size={20} className="text-[#1DA1F2] group-hover:text-[#0d8bd9] transition-colors duration-200" />
-                </div>
+            <div className='flex justify-center items-center gap-4'>
                 <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
                     <MessageCircle size={20} className="text-[#25D366] group-hover:text-[#128C7E] transition-colors duration-200" />
                 </div>
                 <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
-                    <Facebook size={20} className="text-[#1877F2] group-hover:text-[#166fe5] transition-colors duration-200" />
-                </div>
-                <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
-                    <Youtube size={20} className="text-[#FF0000] group-hover:text-[#cc0000] transition-colors duration-200" />
-                </div>
-                <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
                     <Linkedin size={20} className="text-[#0077B5] group-hover:text-[#005885] transition-colors duration-200" />
+                </div>
+                <div className='p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group'>
+                    <Mail size={20} className="text-[#ff0000] group-hover:text-[#ff0000] transition-colors duration-200" />
                 </div>
             </div>
 

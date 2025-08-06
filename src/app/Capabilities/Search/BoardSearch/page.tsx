@@ -92,9 +92,9 @@ const BoardsearchPage = () => {
             </div>
             
             {/* Image positioned on leftmost side */}
-            <div className='flex justify-start mt-8'>
+            <div className='flex justify-start mt-8 lg:max-h-[330px]'>
                 <Image 
-                    src="/board_search.png" 
+                    src="/board_search.jpg"
                     alt="Board meeting visualization" 
                     width={1090} 
                     height={330}
@@ -153,7 +153,7 @@ const BoardsearchPage = () => {
             <h1 className='text-[24px] lg:text-[40px] font-medium'>Who We Serve</h1>
             <div className='flex gap-6 justify-between flex-col lg:flex-row items-center'>
                 <div className='flex flex-col gap-4 max-w-[289px]'>
-                    <Image src='/Board_Artboard1.png' alt='Artboard 1' width={289} height={150} className='object-cover relative' />
+                    <Image src='/Board_Search.png' alt='Artboard 1' width={289} height={150} className='object-cover relative' />
                     <p className='text-center'>High-growth startups institutionalizing governance</p>
                 </div>
                 <div className='flex flex-col gap-4 max-w-[289px]'>

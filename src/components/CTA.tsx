@@ -42,7 +42,7 @@ const CallToAction: React.FC<CallToActionProps> = ({
     >
       {/* Background Image using Next.js Image component */}
       <Image
-          src="/cta-bg.png"
+          src="/cta-bg.jpg"
           alt="Background"
           fill
           className="object-cover"
@@ -51,6 +51,7 @@ const CallToAction: React.FC<CallToActionProps> = ({
         
       
       {/* Overlay for better text readability if background image is used */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
       
       <div className="relative z-20 w-full h-full flex flex-row items-center gap-4 lg:flex-col justify-center lg:px-6 px-4">
         {/* Heading */}

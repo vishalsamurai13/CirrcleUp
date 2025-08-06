@@ -80,9 +80,9 @@ const ABperformancePage = () => {
             </div>
             
             {/* Image positioned on leftmost side */}
-            <div className='flex justify-start mt-8'>
+            <div className='flex justify-start mt-8 max-h-[330px]'>
                 <Image 
-                    src="/transformation1.png" 
+                    src="/transformation1.jpg"
                     alt="Board meeting visualization" 
                     width={1090} 
                     height={330}

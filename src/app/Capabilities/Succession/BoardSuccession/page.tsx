@@ -79,13 +79,13 @@ const BoardSuccessionPage = () => {
             </div>
             
             {/* Image positioned on leftmost side */}
-            <div className='flex justify-start mt-8'>
+            <div className='flex justify-start mt-8 lg:max-h-[330px]'>
                 <Image 
-                    src="/board_succession.png" 
+                    src="/board_succession.jpg"
                     alt="Board meeting visualization" 
                     width={1090} 
                     height={330}
-                    className="object-cover relative"
+                    className="object-cover object-bottom relative"
                 />
             </div>
             

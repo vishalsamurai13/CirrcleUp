@@ -81,13 +81,17 @@ const SustainabilityperformancePage = () => {
             
             {/* Image positioned on leftmost side */}
             <div className='flex justify-start mt-8'>
-                <Image 
-                    src="/transformation2.png" 
-                    alt="Board meeting visualization" 
-                    width={1090} 
-                    height={330}
-                    className="object-cover relative"
-                />
+              <div className="">
+                <video
+                  className="object-cover object-center w-[1090px] max-h-[330px]"
+                  autoPlay
+                  muted
+                  playsInline
+                >
+                  <source src="/leadership.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
             
             {/* Paragraph with margins */}

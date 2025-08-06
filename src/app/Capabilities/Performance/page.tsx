@@ -90,16 +90,20 @@ const PerformancePage = () => {
         <div className='relative pt-[92px] h-[415px] w-full'>
         
           {/* Background Image */}
-          <div className='absolute inset-0 z-0'>
-            <Image
-              src="/leadership.png" // Replace with your actual image path
-              alt="Leadership background"
-              fill
-              className='object-cover'
-              priority
-            />
+          <div className="absolute inset-0 z-0">
+            <video
+              className="object-cover w-full h-full"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/leadership.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
             {/* Optional overlay for better text readability */}
-            <div className='absolute inset-0 bg-black/75'></div>
+            <div className="absolute inset-0 bg-black/50"></div>
           </div>
 
 

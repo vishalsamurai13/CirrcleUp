@@ -82,13 +82,13 @@ const CsuiteSuccessionPage = () => {
             </div>
             
             {/* Image positioned on leftmost side */}
-            <div className='flex justify-start mt-8'>
+            <div className='flex justify-start mt-8 max-h-[330px]'>
                 <Image 
-                    src="/csuitesuccession.png" 
+                    src="/csuitesuccession.jpg"
                     alt="Board meeting visualization" 
                     width={1090} 
                     height={330}
-                    className="object-cover relative"
+                    className="object-cover object-top relative"
                 />
             </div>
             
@@ -102,13 +102,13 @@ Whether you’re institutionalizing governance in a high-growth company or prepa
         </div>
 
         {/* What We Offer Section */}
-        <div className='mt-16'>
+        {/* <div className='mt-16'>
           <WhatWeOfferSection 
             title="Roles We Cover:" 
             items={whatWeOfferItems}
             wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-16"
           />
-        </div>
+        </div> */}
 
         {/* Vertical Info list 1 */}
         <div>
@@ -124,20 +124,20 @@ Whether you’re institutionalizing governance in a high-growth company or prepa
             <h1 className='text-[30px] lg:text-[40px] font-medium'>Who We Serve</h1>
             <div className='lg:grid lg:grid-cols-2 flex flex-col gap-16'>
                 <div className='flex flex-col gap-4 max-w-[400px]'>
-                    <Image src='/Succession_Artboard1.png' alt='Artboard 1' width={400} height={150} className='object-cover relative' />
+                    <Image src='/board_search.jpg' alt='Artboard 1' width={400} height={150} className='max-h-[214px] lg:max-h-[240px] object-cover relative' />
                     <p className='text-center'>Functional benchmarking across sectors</p>
                 </div>
-                <div className='flex flex-col gap-4 max-w-[400px]'>
-                    <Image src='/Succession_Artboard2.png' alt='Artboard 1' width={400} height={150} className='object-cover relative' />
-                    <p className='text-center'>Talent calibration with internal assessments</p>
+                <div className='flex flex-col gap-4 max-w-[400px] '>
+                    <Image src='/Succession_Artboard2.jpg' alt='Artboard 1' width={400} height={150} className='max-h-[214px] lg:max-h-[240px] object-cover relative' />
+                    <p className='text-center'>Internal Assessment</p>
                 </div>
                 <div className='flex flex-col gap-4 max-w-[400px]'>
-                    <Image src='/Succession_Artboard3.png' alt='Artboard 1' width={400} height={150} className='object-cover relative' />
-                    <p className='text-center'>Role-specific successor scorecards</p>
+                    <Image src='/Succession_Artboard3.jpg' alt='Artboard 1' width={400} height={150} className='max-h-[214px] lg:max-h-[240px] object-cover relative' />
+                    <p className='text-center'>Successor Scorecards</p>
                 </div>
                 <div className='flex flex-col gap-4 max-w-[400px]'>
-                    <Image src='/Succession_Artboard4.png' alt='Artboard 1' width={400} height={150} className='object-cover relative' />
-                    <p className='text-center'>Visibility dashboards for HR and leadership</p>
+                    <Image src='/Succession_Artboard4.jpg' alt='Artboard 1' width={400} height={150} className='max-h-[214px] lg:max-h-[240px] object-cover relative' />
+                    <p className='text-center'>HR leadership</p>
                 </div>
             </div>
         </div>

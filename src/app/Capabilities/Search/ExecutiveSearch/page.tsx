@@ -86,9 +86,9 @@ const ExecutivesearchPage = () => {
             </div>
             
             {/* Image positioned on leftmost side */}
-            <div className='flex justify-start mt-8'>
+            <div className='flex justify-start mt-8 lg:max-h-[330px]'>
                 <Image 
-                    src="/board_executive.png" 
+                    src="/board_search.jpg"
                     alt="Board meeting visualization" 
                     width={1090} 
                     height={330}
@@ -106,13 +106,13 @@ Though we’re just two years old, our search practice is battle-tested and indu
         </div>
 
         {/* What We Offer Section */}
-        <div className='mt-16'>
+        {/* <div className='mt-16'>
           <WhatWeOfferSection 
             title="Roles We Cover:" 
             items={whatWeOfferItems}
             wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-16"
           />
-        </div>
+        </div> */}
 
         {/* Vertical Info list 1 */}
         <div>
@@ -129,7 +129,7 @@ Though we’re just two years old, our search practice is battle-tested and indu
           <VerticalInfoList
             title="What Sets Cirrcle Up Apart:"
             items={verticalItems2}
-            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px] "
           />
         </div>
         

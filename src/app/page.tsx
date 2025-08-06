@@ -86,7 +86,7 @@ const page = () => {
         <div className='flex justify-center mt-12'>
           <ConnectWithExperts
             heading="Connect with Our Experts"
-            description="Our team of 500+ leadership advisors across 25 countries and 47 offices help you to harness the power of great leadership."
+            description="We’re a tight, highly experienced team that works hands-on with every client. No layers, no handoffs just sharp thinking, honest advice, and a relentless focus on outcomes that matter."
             buttons={[
               { title: 'Meet Consultants', href: '/Contact/GetInTouch' },
               { title: 'Find Local Offices', href: '/Contact/LocalOffice' },
@@ -95,23 +95,23 @@ const page = () => {
         </div>
 
         {/* Quote with Person Photo */}
-        <div className='w-full bg-[#D9D9D9] mt-24 h-full'>
+        <div className='w-full bg-[#f3f3f3] mt-24 h-full'>
           <div className='flex flex-col lg:flex-row gap-12 px-4 py-5 lg:pt-12 lg:pb-12 lg:ml-[285px] lg:mr-[285px] lg:pr-16 lg:pl-16 items-center'>
               <div className="w-[200px] h-[200px] lg:w-[500px] lg:h-[220px] relative rounded-full overflow-hidden">
                 <Image
-                  src="/businessman.webp"
+                  src="/businessman.jpg"
                   alt="Artboard 1"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top relative"
                 />
               </div>
 
               <div className='flex flex-col gap-4 justify-between lg:h-[220px]'>
-                <p className='font-semibold text-[14px] lg:text-[20px]'>&quot;Being a chemist, I see consultancy as a business catalyst: it accelerates transformations while at the same time raising the appeak of the client and their product&quot;</p>
+                <p className='font-semibold text-[14px] lg:text-[20px]'>&quot;Consulting, to me, is less about advice and more about alignment between potential and performance, instinct and insight. When done right, it doesn’t just solve problems; it sharpens the client’s edge.&quot;</p>
                 <div className='flex flex-col mt-6'>
-                  <p className='text-[12px] lg:text-[14px] font-bold'>James Hawkins Woodsen</p>
-                  <p className='text-[12px] lg:text-[14px]'>Former Associate</p>
-                  <p className='text-[12px] lg:text-[14px]'>Dubai Office, UAE</p>
+                  <p className='text-[12px] lg:text-[14px] font-bold'>Animesh Singh Rao</p>
+                  <p className='text-[12px] lg:text-[14px]'>Managing Partner, Cirrcle Up </p>
+                  <p className='text-[12px] lg:text-[14px]'>Dubai, UAE</p>
                 </div>
               </div>
           </div>
@@ -164,8 +164,8 @@ const page = () => {
         {/* Floating CTA */}
         <div className="flex justify-center -mt-40 z-10 relative">
           <CallToAction3
-            heading="Shape What’s Next, Right Now."
-            description="Get in touch to discover how we can help bring the future into focus—for you, your people, and your business."
+            heading="Let’s Build What’s Next Together"
+            description="Reach out and let’s talk about where you’re headed, what’s in the way, and how we can help you move with clarity and confidence."
             buttons={[{ title: "Get in Touch", href: "/contact" }]}
           />
         </div>
