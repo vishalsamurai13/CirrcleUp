@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ArrowRight, Twitter, MessageCircle, Facebook, Youtube, Linkedin, Mail } from 'lucide-react'
+import { ArrowRight, MessageCircle, Linkedin, Mail } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 

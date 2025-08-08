@@ -4,28 +4,27 @@ import { Footer } from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
 import QuoteBox from '@/components/Quote';
 import VerticalInfoList from '@/components/VerticalInfoList';
-import WhatWeOfferSection from '@/components/Whatweoffer';
 import { BookOpen, MoveRight } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
 
-const whatWeOfferItems = [
-  {
-    paragraph: "Chief Financial Officer (CFO)",
-  },
-  {
-    paragraph: "Chief Human Resources Officer (CHRO)",
-  },
-  {
-    paragraph: "Chief Marketing Officer (CMO)",
-  },
-  {
-    paragraph: "Chief Technology/Product Officers (CTO/CPO)",
-  },
-  {
-    paragraph: "Chief Operating Officers (COO)",
-  },
-];
+// const whatWeOfferItems = [
+//   {
+//     paragraph: "Chief Financial Officer (CFO)",
+//   },
+//   {
+//     paragraph: "Chief Human Resources Officer (CHRO)",
+//   },
+//   {
+//     paragraph: "Chief Marketing Officer (CMO)",
+//   },
+//   {
+//     paragraph: "Chief Technology/Product Officers (CTO/CPO)",
+//   },
+//   {
+//     paragraph: "Chief Operating Officers (COO)",
+//   },
+// ];
 
 const verticalItems = [
   {

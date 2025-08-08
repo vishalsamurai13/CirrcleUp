@@ -6,7 +6,7 @@ import QuoteBox from '@/components/Quote';
 import VerticalInfoList from '@/components/VerticalInfoList';
 import WhatWeOfferSection from '@/components/Whatweoffer';
 import { BookOpen } from 'lucide-react';
-import Image from 'next/image';
+
 import Link from 'next/link';
 import React from 'react'
 

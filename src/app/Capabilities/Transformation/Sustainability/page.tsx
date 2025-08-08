@@ -1,5 +1,3 @@
- 
- 
 import CallToAction from '@/components/CTA';
 import { Footer } from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
@@ -7,7 +5,6 @@ import QuoteBox from '@/components/Quote';
 import VerticalInfoList from '@/components/VerticalInfoList';
 import WhatWeOfferSection from '@/components/Whatweoffer';
 import { BookOpen, MoveRight } from 'lucide-react';
-import Image from 'next/image';
 import React from 'react'
 
 const whatWeOfferItems = [
