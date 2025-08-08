@@ -27,11 +27,22 @@ const WhatWeOfferSection: React.FC<WhatWeOfferSectionProps> = ({
       <div className={wrapperClassName}>
         <h1 className="text-[30px] lg:text-[40px] font-medium">{title}</h1>
         <p className="text-[14px] lg:text-[20px] text-[#28B673] mb-12 mt-3">{paragraph}</p>
-        <div className="space-y-16">
+        <div className="space-y-12 lg:space-y-16">
           {items.map((item, index) => (
             <div key={index}>
-                <h1 className="text-[28px] font-light mb-3 flex items-center"> {item.heading}</h1>
-              <p className="text-gray-700 mb-4 leading-relaxed text-[14px] lg:text-[18px]">{item.paragraph}</p>
+              {item.heading && (
+                  <h1 className="text-[28px] font-light lg:mb-3 flex items-center">
+                    {item.heading}
+                  </h1>
+                )}
+                <p
+                  className={`text-gray-700 leading-relaxed text-[14px] lg:text-[18px] ${
+                    item.heading && item.buttonText ? 'mb-8 lg:mb-4' : ' lg:mb-2'
+                  }`}
+                >
+                  {item.paragraph}
+                </p>
+                
               
               {item.buttonText && (
                   <Link href={item.buttonLink || "#"} className="group inline-flex items-center font-semibold text-[12px] lg:text-[14px] uppercase border-b border-black hover:opacity-75 cursor-pointer">
