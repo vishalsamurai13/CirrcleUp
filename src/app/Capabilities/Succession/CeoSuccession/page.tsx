@@ -142,7 +142,7 @@ In our two years, we’ve built a strong track record of helping organizations p
           <CallToAction 
             heading="Secure your company’s future leadership, today."
             buttons={[
-              { title: "BOOK A CEO SUCCESSION PLANNING SESSION", href: "/board-search" },
+              { title: "BOOK A CEO SUCCESSION PLANNING SESSION", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />

@@ -118,7 +118,7 @@ const SearchPage = () => {
           <VerticalInfoList
             title="Why Cirrcle Up:"
             items={verticalItems2}
-            wrapperClassName="lg:ml-[285px] lg:mr-[285px] lg:py-20"
+            wrapperClassName="lg:ml-[285px] lg:mr-[285px]"
           />
         </div>
 

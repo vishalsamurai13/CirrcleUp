@@ -163,7 +163,7 @@ Whether you’re institutionalizing governance in a high-growth company or prepa
           <CallToAction 
             heading="Build your leadership bench before you need it."
             buttons={[
-              { title: "BOOK A SUCCESSION HEALTH CHECK", href: "/board-search" },
+              { title: "BOOK A SUCCESSION HEALTH CHECK", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />

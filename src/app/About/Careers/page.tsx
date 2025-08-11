@@ -358,12 +358,12 @@ const Careers = () => {
                 <CallToAction3
                     heading="Your Next Move"
                     description="Are you ready to grow faster than you ever thought possible? Ready to work with a team that cares about your story, not just your output? Let's build something extraordinary together."
-                    buttons={[{ title: "APPLY NOW", href: "/contact" }, { title: "SEND US YOUR STORY", href: "/contact" }]}
+                    buttons={[{ title: "APPLY NOW", href: "/Contact/GetInTouch" }, { title: "SEND US YOUR STORY", href: "/Contact/GetInTouch" }]}
                 />
                 <CallToAction3
                     heading="Not looking, but know someone who is?"
                     description="and if we hire them, you get a thank you from us."
-                    buttons={[{ title: "REFER A FRIEND", href: "/contact" }]}
+                    buttons={[{ title: "REFER A FRIEND", href: "/Contact/GetInTouch" }]}
                 />
             </div>
         </div>

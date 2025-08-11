@@ -147,7 +147,7 @@ const TEperformancePage = () => {
           <CallToAction 
             heading="Build the team that builds your business."
             buttons={[
-              { title: "EXPLORE OUR OFFSITE FACILITATION SERVICES", href: "/board-search" },
+              { title: "EXPLORE OUR OFFSITE FACILITATION SERVICES", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />

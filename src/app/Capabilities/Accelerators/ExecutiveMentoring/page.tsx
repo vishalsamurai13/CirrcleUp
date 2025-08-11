@@ -166,7 +166,7 @@ const ABperformancePage = () => {
         <CallToAction
           heading="Let your leaders grow through wisdom, not just experience."
           buttons={[
-            { title: "BOOK A CHEMISTRY MATCH SESSION", href: "/board-search" },
+            { title: "BOOK A CHEMISTRY MATCH SESSION", href: "/Contact/GetInTouch" },
           ]}
           backgroundImage="/cta-bg.png"
         />

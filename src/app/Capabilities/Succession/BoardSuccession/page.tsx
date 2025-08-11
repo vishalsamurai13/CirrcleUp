@@ -140,7 +140,7 @@ const BoardSuccessionPage = () => {
           <CallToAction 
             heading="Start building a board that lasts."
             buttons={[
-              { title: "TALK TO A BOARD SUCCESSION SPECIALIST", href: "/board-search" },
+              { title: "TALK TO A BOARD SUCCESSION SPECIALIST", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />

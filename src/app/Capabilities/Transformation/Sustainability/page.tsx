@@ -140,7 +140,7 @@ const SustainabilityperformancePage = () => {
           <CallToAction 
             heading="Lead with purpose. Grow with responsibility."
             buttons={[
-              { title: "START YOUR ESG LEADERSHIP JOURNEY", href: "/board-search" },
+              { title: "START YOUR ESG LEADERSHIP JOURNEY", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />

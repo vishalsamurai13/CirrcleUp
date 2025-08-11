@@ -139,7 +139,7 @@ Our Inclusion & Culture practice helps high-growth and legacy organizations evol
           <CallToAction 
             heading="Let’s build a culture that includes, inspires, and endures."
             buttons={[
-              { title: "START WITH A CULTURE AUDIT", href: "/board-search" },
+              { title: "START WITH A CULTURE AUDIT", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />

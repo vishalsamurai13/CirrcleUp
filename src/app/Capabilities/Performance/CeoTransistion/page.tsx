@@ -139,7 +139,7 @@ We work with boards, founders, and CHROs to ensure transitions are not just seam
           <CallToAction 
             heading="Make your CEO transition a moment of momentum."
             buttons={[
-              { title: "BOOK A TRANSITION PLANNING CALL", href: "/board-search" },
+              { title: "BOOK A TRANSITION PLANNING CALL", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />

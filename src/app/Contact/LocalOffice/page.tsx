@@ -35,12 +35,12 @@ const GetInTouch = () => {
                 <h2 className='text-lg lg:text-[20px] mb-6 lg:mb-8'>Find us in:</h2>
                 <div className='w-full flex flex-col gap-6 lg:gap-4'>
                     {/* Gurgaon */}
-                    <div className='bg-[#FFFBFB] flex flex-col lg:flex-row gap-4 shadow-md rounded-lg lg:rounded-none overflow-hidden'>
-                        <div className='w-full lg:w-auto flex-shrink-0'>
+                    <div className='bg-[#FFFBFB] flex flex-col lg:flex-row gap-4 shadow-md rounded-lg lg:rounded-none overflow-hidden lg:max-h-[140px]'>
+                        <div className='w-full lg:w-1/3 flex-shrink-0'>
                             <Image 
-                              src='/gurgaon.png'
+                              src='/gurgaon.jpg'
                               alt='Gurgaon office location' 
-                              className="object-cover relative w-full h-48 lg:h-auto"
+                              className="object-cover relative w-full h-48 lg:h-full"
                               width={400} 
                               height={300}
                             />
@@ -54,12 +54,12 @@ const GetInTouch = () => {
                     </div>
                     
                     {/* Dubai */}
-                    <div className='bg-[#FFFBFB] flex flex-col lg:flex-row gap-4 shadow-md rounded-lg lg:rounded-none overflow-hidden'>
-                        <div className='w-full lg:w-auto flex-shrink-0'>
+                    <div className='bg-[#FFFBFB] flex flex-col lg:flex-row gap-4 shadow-md rounded-lg lg:rounded-none overflow-hidden lg:max-h-[140px]'>
+                        <div className='w-full lg:w-1/3 flex-shrink-0'>
                             <Image 
-                              src='/dubai.png'
+                              src='/dubai.webp'
                               alt='Dubai office location' 
-                              className="object-cover relative w-full h-48 lg:h-auto"
+                              className="object-cover relative w-full h-48 lg:h-full"
                               width={400} 
                               height={300}
                             />
@@ -73,12 +73,12 @@ const GetInTouch = () => {
                     </div>
                     
                     {/* Future Locations */}
-                    <div className='bg-[#FFFBFB] flex flex-col lg:flex-row gap-4 shadow-md rounded-lg lg:rounded-none overflow-hidden'>
-                        <div className='w-full lg:w-auto flex-shrink-0'>
+                    <div className='bg-[#FFFBFB] flex flex-col lg:flex-row gap-4 shadow-md rounded-lg lg:rounded-none overflow-hidden lg:max-h-[140px]'>
+                        <div className='w-full lg:w-1/3 flex-shrink-0'>
                             <Image 
-                              src='/cities.png'
+                              src='/cities.jpg'
                               alt='Future office locations' 
-                              className="object-cover relative w-full h-48 lg:h-auto"
+                              className="object-cover relative w-full h-48 lg:h-full"
                               width={400} 
                               height={300}
                             />

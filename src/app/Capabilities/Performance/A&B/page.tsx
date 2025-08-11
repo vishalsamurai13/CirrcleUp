@@ -147,7 +147,7 @@ const ABperformancePage = () => {
           <CallToAction 
             heading="Ready to reimagine your board?"
             buttons={[
-              { title: "SCHEDULE A TALENT BENCHMARKING CALL", href: "/board-search" },
+              { title: "SCHEDULE A TALENT BENCHMARKING CALL", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />

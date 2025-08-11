@@ -153,7 +153,7 @@ const BoardsearchPage = () => {
             <h1 className='text-[24px] lg:text-[40px] font-medium'>Who We Serve</h1>
             <div className='flex gap-6 justify-between flex-col lg:flex-row items-center'>
                 <div className='flex flex-col gap-4 max-w-[289px]'>
-                    <Image src='/Board_Search.png' alt='Artboard 1' width={289} height={150} className='object-cover relative' />
+                    <Image src='/Board_Artboard1.png' alt='Artboard 1' width={289} height={150} className='object-cover relative' />
                     <p className='text-center'>High-growth startups institutionalizing governance</p>
                 </div>
                 <div className='flex flex-col gap-4 max-w-[289px]'>
@@ -180,9 +180,9 @@ const BoardsearchPage = () => {
           <CallToAction 
             heading="Discover how our search services can reshape your leadership."
             buttons={[
-              { title: "EXPLORE BOARD SEARCH", href: "/board-search" },
-              { title: "EXPLORE CEO SEARCH", href: "/ceo-search" },
-              { title: "EXPLORE EXECUTIVE SEARCH", href: "/executive-search" }
+              { title: "EXPLORE BOARD SEARCH", href: "/Capabilities/Search/BoardSearch" },
+              { title: "EXPLORE CEO SEARCH", href: "/Capabilities/Search/CeoSearch" },
+              { title: "EXPLORE EXECUTIVE SEARCH", href: "/Capabilities/Search/ExecutiveSearch" }
             ]}
           backgroundImage="/cta-bg.png"
           />

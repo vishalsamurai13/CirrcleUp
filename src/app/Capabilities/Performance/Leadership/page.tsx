@@ -139,7 +139,7 @@ Our Leadership Development & Transitions program is built to support these key m
           <CallToAction 
             heading="Develop leaders who are built to last."
             buttons={[
-              { title: "TALK TO A DEVELOPMENT SPECIALIST", href: "/board-search" },
+              { title: "TALK TO A DEVELOPMENT SPECIALIST", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />

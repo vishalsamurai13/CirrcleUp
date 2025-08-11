@@ -145,7 +145,7 @@ In just two years, we’ve helped fast-scaling firms and legacy giants alike ide
           <CallToAction 
             heading="Let’s find the CEO who will define your next decade."
             buttons={[
-              { title: "TALK TO OUR CEO PRACTICE LEAD", href: "/board-search" },
+              { title: "TALK TO OUR CEO PRACTICE LEAD", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />

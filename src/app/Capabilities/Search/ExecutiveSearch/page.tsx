@@ -146,7 +146,7 @@ Though we’re just two years old, our search practice is battle-tested and indu
           <CallToAction 
             heading="Let’s find the leader who fits your future."
             buttons={[
-              { title: "START A SEARCH NOW", href: "/board-search" },
+              { title: "START A SEARCH NOW", href: "/Contact/GetInTouch" },
             ]}
           backgroundImage="/cta-bg.png"
           />
