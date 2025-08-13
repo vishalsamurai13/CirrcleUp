@@ -52,6 +52,7 @@ const CareerAdvance = () => {
 
     const FilterSection = ({ isMobile = false }) => (
         <div className={`${isMobile ? 'w-full' : 'w-80'} bg-white ${isMobile ? '' : 'border border-gray-200 rounded-lg p-6'}`}>
+            <h3 className="text-xl font-bold mb-6">Filters</h3>
             
             {/* Experience Level Filter */}
             <div className="mb-6">
@@ -187,7 +188,7 @@ const CareerAdvance = () => {
             <div className={`absolute right-0 top-0 h-full w-full max-w-sm bg-white transition-transform duration-300 ${showMobileFilters ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="p-6 h-full overflow-y-auto">
                     <div className="flex items-center justify-between mb-6">
-                        <h3 className="text-xl font-bold">Filters</h3>
+                        <h3 className="text-[10px]">Apply Your Dedicated Filters from below</h3>
                         <button 
                             onClick={() => setShowMobileFilters(false)}
                             className="p-2 hover:bg-gray-100 rounded-full"
