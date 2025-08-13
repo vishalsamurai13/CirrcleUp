@@ -80,7 +80,7 @@ const AcceleratorPage = () => {
           {/* Content Overlay */}
           <div className='relative z-10 flex flex-col justify-center h-full lg:ml-[285px] lg:mr-[285px] lg:px-16 px-4 lg:pt-0'>
             <div className='max-w-4xl space-y-6'>
-              <h1 className='font-bold text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px] text-white'>
+              <h1 className='font-medium text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px] text-white'>
                 Accelerating Leadership Impact Through Mentorship and Development
               </h1>
               <h2 className='font-medium text-[14px] lg:text-[18px] leading-[20px] lg:leading-[40px] text-[#28B673]'>
@@ -93,7 +93,7 @@ const AcceleratorPage = () => {
         {/* Content Section */}
         <div className='lg:ml-[285px] lg:mr-[285px] h-full lg:pr-16 lg:pl-16 px-4'>
             <div className='space-y-4'>
-                <p className='text-[14px] lg:text-[18px] leading-[20px] mt-12'>
+                <p className='text-[14px] lg:text-[18px] lg:leading-[30px] leading-[20px] mt-12'>
                 In today’s environment, leadership acceleration is not a luxury—it’s a necessity. Organizations need future-ready leaders who can step up quickly, deliver results, and inspire teams through uncertainty.
                 <br /><br />
 The Accelerators Practice at Cirrcle Up is focused on designing mentoring, coaching, and development journeys that unlock high-potential talent and create lasting business value. Our approach is personalized, evidence-based, and deeply connected to organizational needs.

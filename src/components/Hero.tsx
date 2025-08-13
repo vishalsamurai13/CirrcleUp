@@ -2,7 +2,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+
 import Link from 'next/link';
 import { WhiteNavbar } from './layout/Navbar';
 
@@ -13,7 +13,7 @@ const AnimatedHeroSection = () => {
   const tabData = [
     {
       id: 'cfo',
-      backgroundImage: '/cfo.png',
+      backgroundImage: '/3.mp4',
       category: '8 mins Read',
       title: 'The Silent Crisis',
       description: 'Our latest analysis reveals key patterns in CFO transitions, highlighting the evolving role of financial leadership in today\'s complex business environment.',
@@ -22,7 +22,7 @@ const AnimatedHeroSection = () => {
     },
     {
       id: 'chro',
-      backgroundImage: '/CHRO.png',
+      backgroundImage: '/leadership.mp4',
       category: '6 mins Read',
       title: 'Hired or Harmed',
       description: 'Deep dive into Chief Human Resources Officer transitions and their impact on organizational culture and employee engagement in the modern workplace.',
@@ -31,7 +31,7 @@ const AnimatedHeroSection = () => {
     },
     {
       id: 'ceo',
-      backgroundImage: '/Ceo.png',
+      backgroundImage: '/2.mp4',
       category: '12 mins Read',
       title: 'Beyond the CV',
       description: 'Exclusive interviews and insights from top CEOs sharing their perspectives on leadership, strategy, and navigating business challenges.',
@@ -64,7 +64,7 @@ const AnimatedHeroSection = () => {
       <div className="pt-[120px] h-full relative">
 
         {/* Background Images with Transition */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 z-0">
           {tabData.map((data, index) => (
             <div
               key={data.id}
@@ -73,16 +73,18 @@ const AnimatedHeroSection = () => {
               }`}
             >
               {/* Background Image using Next.js Image */}
-              <Image
-                src={data.backgroundImage}
-                alt={data.title}
-                fill
-                className="object-cover z-10"
-                priority={index === 0} // Only prioritize the first image
-                quality={90}
-              />
-              {/* Dark Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-40" />
+              <video
+                  className="object-cover object-center w-full h-full relative z-0"
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
+                >
+                  <source src={data.backgroundImage} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              {/* Dark Overlay for this specific video */}
+              <div className="absolute inset-0 bg-black/70 z-5" />
             </div>
           ))}
         </div>

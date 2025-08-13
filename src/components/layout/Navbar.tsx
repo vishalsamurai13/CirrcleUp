@@ -383,7 +383,7 @@ export const Capabilities = () => {
 
         {/* Overlay content */}
         <div className="relative z-10 p-4">
-          <h1 className='text-[46px] leading-tight font-semibold text-white'>
+          <h1 className='text-[24px] mt-6 leading-tight font-semibold text-white'>
             The Science Behind C-Suite Success: Your CxOs Need This Skill
           </h1>
           <p className='text-[15px] text-white mt-8'>
@@ -449,7 +449,7 @@ export const Articles = () => {
 
         {/* Overlay content */}
         <div className="relative z-10 p-4">
-          <h1 className='text-[46px] leading-tight font-semibold text-white'>
+          <h1 className='text-[24px] mt-6 leading-tight font-semibold text-white'>
             Board & CEO Advisory
           </h1>
           <p className='text-[15px] text-white mt-8'>
@@ -501,7 +501,7 @@ export const About = () => {
 
         {/* Overlay content */}
         <div className="relative z-10 p-4">
-          <h1 className='text-[46px] leading-tight font-semibold text-white'>
+          <h1 className='text-[24px] mt-6 leading-tight font-semibold text-white'>
             Consultant Directory
           </h1>
           <p className='text-[15px] text-white mt-8'>
@@ -559,7 +559,7 @@ export const Careers = () => {
 
         {/* Overlay content */}
         <div className="relative z-10 p-4">
-          <h1 className='text-[46px] leading-tight font-semibold text-white'>
+          <h1 className='text-[24px] mt-6 leading-tight font-semibold text-white'>
             Request for Consultation
           </h1>
           <p className='text-[15px] text-white mt-8'>

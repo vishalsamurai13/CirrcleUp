@@ -97,7 +97,7 @@ const page = () => {
         {/* Quote with Person Photo */}
         <div className='w-full bg-[#f3f3f3] mt-24 h-full'>
           <div className='flex flex-col lg:flex-row gap-12 px-4 py-5 lg:pt-12 lg:pb-12 lg:ml-[285px] lg:mr-[285px] lg:pr-16 lg:pl-16 items-center'>
-              <div className="w-[200px] h-[200px] lg:w-[500px] lg:h-[220px] relative rounded-full overflow-hidden">
+              <div className="w-[200px] h-[200px] lg:w-[500px] lg:max-h-[220px] relative rounded-full overflow-hidden">
                 <Image
                   src="/businessman.jpg"
                   alt="Artboard 1"

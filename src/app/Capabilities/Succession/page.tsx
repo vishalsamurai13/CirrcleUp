@@ -85,7 +85,7 @@ const SuccessionPage = () => {
             <div className='mt-12 space-y-4'>
                 <h1 className='font-medium text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px]'>Leadership Continuity that Strengthens Tomorrow</h1>
                 <h2 className='font-medium text-[14px] lg:text-[18px] leading-[20px] lg:leading-[40px] text-[#28B673]'>Cirrcle Up supports businesses in building proactive, strategic succession plans for board, CEO, and C-suite roles—so you’re never caught off-guard.</h2>
-                <p className='text-[14px] lg:text-[18px] leading-[20px] mt-8'>Succession is not a contingency—it’s a growth strategy. In a world of rapid change, unplanned leadership transitions can unravel years of momentum. That’s why Cirrcle Up’s Succession Practice is built to ensure leadership continuity, internal capability building, and long-term value creation.
+                <p className='text-[14px] lg:text-[18px] lg:leading-[30px] leading-[20px] mt-8'>Succession is not a contingency—it’s a growth strategy. In a world of rapid change, unplanned leadership transitions can unravel years of momentum. That’s why Cirrcle Up’s Succession Practice is built to ensure leadership continuity, internal capability building, and long-term value creation.
                     <br /><br />
                     At just two years old, Cirrcle Up has already earned the trust of dynamic businesses across sectors for one reason: we approach succession with empathy, structure, and strategic clarity. Our plans aren’t documents—they’re action-ready, insight-driven pathways for smooth leadership evolution.</p>
             </div>

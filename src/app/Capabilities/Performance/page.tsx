@@ -112,7 +112,7 @@ const PerformancePage = () => {
           {/* Content Overlay */}
           <div className='relative z-10 flex flex-col justify-center h-full lg:ml-[285px] lg:mr-[285px] lg:px-16 px-4 lg:pt-0'>
             <div className='max-w-4xl space-y-6'>
-              <h1 className='font-bold text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px] text-white'>
+              <h1 className='font-medium text-[35px] leading-[40px] lg:text-[46px] lg:leading-[60px] text-white'>
                 Enabling Leadership That Performs Under Pressure
               </h1>
               <h2 className='font-medium text-[14px] lg:text-[18px] leading-[20px] lg:leading-[40px] text-[#28B673]'>
@@ -125,7 +125,7 @@ const PerformancePage = () => {
         {/* Content Section */}
         <div className='lg:ml-[285px] lg:mr-[285px] h-full lg:pr-16 lg:pl-16 px-4'>
             <div className='space-y-4'>
-                <p className='text-[14px] lg:text-[18px] leading-[20px] mt-12'>
+                <p className='text-[14px] lg:text-[18px] lg:leading-[30px] leading-[20px] mt-12'>
                   Great leaders aren't born—they're built, challenged, and continuously elevated. Our Performance Practice is designed to empower boards, CEOs, and leadership teams to function at their best. Whether you're onboarding a new CEO, developing internal successors, or aligning leadership teams, Cirrcle Up helps unlock real, measurable impact.
                   <br /><br />
                   As a young but rapidly growing firm, we bring agility, innovation, and business intimacy to every engagement. We don't believe in standard playbooks—we co-create transformation with you, tailored to your goals.

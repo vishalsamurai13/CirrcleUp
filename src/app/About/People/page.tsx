@@ -37,30 +37,30 @@ const People = () => {
                         <Image 
                         src='/people3.png' 
                         alt='Leadership team with 50+ years experience' 
-                        className='object-cover relative w-full h-auto'
+                        className='object-cover relative w-full h-auto rounded-lg'
                         width={438} 
                         height={304}
                         /> 
                     </div>
                     <div className='w-full lg:max-w-[420px] order-2 lg:order-2 text-center lg:text-left'>
-                        <h2 className='text-xl lg:text-[28px] font-semibold leading-tight'>
+                        <h1 className='text-xl lg:text-[28px] font-regular leading-tight'>
                             50+ years of combined leadership experience
-                        </h2>
+                        </h1>
                     </div>
                 </div>
 
                 {/* Second Section */}
                 <div className='flex flex-col lg:flex-row gap-4 lg:gap-8 items-center max-w-[890px]'>
                     <div className='w-full lg:max-w-[420px] order-2 lg:order-1 text-center lg:text-left'>
-                        <h2 className='text-xl lg:text-[28px] font-semibold leading-tight'>
+                        <h1 className='text-xl lg:text-[28px] font-regular leading-tight'>
                             5 industries led by founders before Cirrcle Up even started
-                        </h2>
+                        </h1>
                     </div>
                     <div className='w-full lg:max-w-[445px] order-1 lg:order-2'>
                         <Image 
                         src='/people2.png' 
                         alt='Founders with multi-industry experience' 
-                        className='object-cover relative w-full h-auto'
+                        className='object-cover relative w-full h-auto rounded-lg'
                         width={438} 
                         height={304}
                         /> 
@@ -73,15 +73,15 @@ const People = () => {
                         <Image 
                         src='/people1.png' 
                         alt='Experienced entrepreneurs who have learned from failure' 
-                        className='object-cover relative w-full h-auto'
+                        className='object-cover relative w-full h-auto rounded-lg'
                         width={438} 
                         height={304}
                         /> 
                     </div>
                     <div className='w-full lg:max-w-[420px] order-2 lg:order-2 text-center lg:text-left'>
-                        <h2 className='text-xl lg:text-[28px] font-semibold leading-tight'>
+                        <h1 className='text-xl lg:text-[28px] font-regular leading-tight'>
                             2 leaders who&apos;ve actually started their own companies (and failed at least once—just the way we like it!)
-                        </h2>
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -131,8 +131,8 @@ const People = () => {
                         </div>
                     </div>
 
-                    <div className='w-full max-w-[793px] py-6 lg:py-5 bg-[#d9d9d9] rounded-[15px] px-5 mt-12 lg:mt-24 shadow-lg flex flex-col gap-4 lg:gap-6'>
-                        <h2 className='font-semibold text-xl lg:text-[27px]'>Quick Fact:</h2>
+                    <div className='w-full py-6 lg:py-5 border rounded-[15px] px-5 mt-12 lg:mt-24 shadow-lg flex flex-col gap-4 lg:gap-6'>
+                        <h1 className=' text-xl lg:text-[27px]'>Quick Fact:</h1>
                         <p className='text-[#28B673] text-lg lg:text-[20px] leading-relaxed'>
                             "Over 70% of our successful C-suite placements involved two or more markets—because the best talent often isn't next door."
                         </p>
