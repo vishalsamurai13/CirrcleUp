@@ -107,7 +107,7 @@ const page = () => {
               </div>
 
               <div className='flex flex-col gap-4 justify-between lg:h-[220px]'>
-                <p className='font-semibold text-[14px] lg:text-[20px]'>&quot;Consulting, to me, is less about advice and more about alignment between potential and performance, instinct and insight. When done right, it doesn’t just solve problems; it sharpens the client’s edge.&quot;</p>
+                <p className='font-medium text-[14px] lg:text-[20px]'>&quot;Consulting, to me, is less about advice and more about alignment between potential and performance, instinct and insight. When done right, it doesn’t just solve problems; it sharpens the client’s edge.&quot;</p>
                 <div className='flex flex-col mt-6'>
                   <p className='text-[12px] lg:text-[14px] font-bold'>Animesh Singh Rao</p>
                   <p className='text-[12px] lg:text-[14px]'>Managing Partner, Cirrcle Up </p>
