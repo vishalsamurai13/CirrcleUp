@@ -166,7 +166,7 @@ const page = () => {
           <CallToAction3
             heading="Let’s Build What’s Next Together"
             description="Reach out and let’s talk about where you’re headed, what’s in the way, and how we can help you move with clarity and confidence."
-            buttons={[{ title: "Get in Touch", href: "/contact" }]}
+            buttons={[{ title: "Get in Touch", href: "/Contact/GetInTouch" }]}
           />
         </div>
 
